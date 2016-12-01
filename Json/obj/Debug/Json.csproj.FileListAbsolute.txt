@@ -1,0 +1,14 @@
+C:\Users\david\Documents\Visual Studio 2015\Projects\eNutre\Json\bin\Debug\Json.dll
+C:\Users\david\Documents\Visual Studio 2015\Projects\eNutre\Json\bin\Debug\Json.pdb
+C:\Users\david\Documents\Visual Studio 2015\Projects\eNutre\Json\bin\Debug\Newtonsoft.Json.dll
+C:\Users\david\Documents\Visual Studio 2015\Projects\eNutre\Json\bin\Debug\Newtonsoft.Json.xml
+C:\Users\david\Documents\Visual Studio 2015\Projects\eNutre\Json\obj\Debug\Json.csprojResolveAssemblyReference.cache
+C:\Users\david\Documents\Visual Studio 2015\Projects\eNutre\Json\obj\Debug\Json.dll
+C:\Users\david\Documents\Visual Studio 2015\Projects\eNutre\Json\obj\Debug\Json.pdb
+C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\Json\bin\Debug\Json.dll
+C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\Json\bin\Debug\Json.pdb
+C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\Json\bin\Debug\Newtonsoft.Json.dll
+C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\Json\bin\Debug\Newtonsoft.Json.xml
+C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\Json\obj\Debug\Json.csprojResolveAssemblyReference.cache
+C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\Json\obj\Debug\Json.dll
+C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\Json\obj\Debug\Json.pdb
