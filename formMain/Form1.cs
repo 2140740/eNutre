@@ -29,8 +29,7 @@ namespace formMain
         public string xml = null;
         private string extension = null;
 
-        private
-            void button_upload_Click(object sender, EventArgs e)
+        private void button_upload_Click(object sender, EventArgs e)
         {
             /// Código Load do Ficheiro ////
 
