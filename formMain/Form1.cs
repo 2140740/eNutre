@@ -101,19 +101,11 @@ namespace formMain
 
                         pathrestaurante = saveFileDialog1.FileName;
 
-                        writer.WriteStartDocument(true);
-                        writer.Formatting = Formatting.Indented;
-                        writer.Indentation = 2;
-                        writer.WriteStartElement("restaurantes");
+                        int i = 0;
 
-                        for (int i = 0; i <= ExcelHandler.Restaurante.Count - 1; i++)
-                        {
-                            createNode(ExcelHandler.Restaurante[i], ExcelHandler.Item[i], ExcelHandler.Quantidade[i],
-                                ExcelHandler.Calorias[i], writer);
-                        }
-                        writer.WriteEndElement();
-                        writer.WriteEndDocument();
-                        writer.Close();
+                        ExcelHandler.writetoXML(writer, i);
+
+                       
                         MessageBox.Show("O ficheiro XML foi criado com sucesso ! ");
                     }
 
@@ -127,58 +119,6 @@ namespace formMain
             {
                 MessageBox.Show("Essa extensão não é suportada neste botão", "Erro", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
-            }
-        }
-
-
-        private void createNode(string restaurante, string item, string quantidade, string calorias,
-            XmlTextWriter writer)
-        {
-            writer.WriteStartElement("restaurante");
-            writer.WriteStartElement("restaurante");
-            writer.WriteString(restaurante);
-            writer.WriteEndElement();
-            writer.WriteStartElement("item");
-            writer.WriteString(item);
-            writer.WriteEndElement();
-            writer.WriteStartElement("quantidade");
-            writer.WriteString(quantidade);
-            writer.WriteEndElement();
-            writer.WriteStartElement("calorias");
-            writer.WriteString(calorias);
-            writer.WriteEndElement();
-            writer.WriteEndElement();
-        }
-
-        private void ValidateExcel()
-        {
-            Boolean isValid = true;
-
-            try
-            {
-                XmlReaderSettings settings = new XmlReaderSettings();
-                settings.Schemas.Add(null, Environment.CurrentDirectory + "\\XSD\\XMLSchemaRestaurantes.xsd");
-                settings.ValidationType = ValidationType.Schema;
-
-                XmlReader reader = XmlReader.Create(textBox_path.Text, settings);
-                XmlDocument document = new XmlDocument();
-                document.Load(reader);
-
-            }
-            catch (Exception ex)
-            {
-                isValid = false;
-                MessageBox.Show("Erro na validação do XML", "Erro de Validação", MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
-
-            }
-            finally
-            {
-                if (isValid != false)
-                {
-                    MessageBox.Show("Sucesso na validação do XML", "Validação", MessageBoxButtons.OK,
-                        MessageBoxIcon.Information);
-                }
             }
         }
 
@@ -206,7 +146,8 @@ namespace formMain
 
                         if (openFileDialog1.FileName.Contains("XMLSchemaRestaurantes"))
                         {
-                            ValidateExcel();
+                            ExcelHandler.path_textbox = textBox_path.Text;
+                            ExcelHandler.ValidateExcel();
                         }
                         else if (openFileDialog1.FileName.Contains("XMLSchemaExercicios"))
                         {
@@ -302,7 +243,6 @@ namespace formMain
                     MessageBoxIcon.Information);
             }
         }
-
 
         private void createNodeJ(string nome, string calorias, string met, XmlTextWriter writer)
         {
@@ -416,8 +356,6 @@ namespace formMain
                     MessageBoxIcon.Information);
             }
         }
-
-
 
         private void createNodeT(string calorias, string nome, string quantidade, XmlTextWriter writer)
         {
