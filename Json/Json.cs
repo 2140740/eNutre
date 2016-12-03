@@ -6,6 +6,9 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.IO;
+using System.Xml;
+using Formatting = System.Xml.Formatting;
+using System.Windows.Forms;
 
 namespace Jsoncode
 {
@@ -16,6 +19,7 @@ namespace Jsoncode
         public static List<string> CaloriasList = new List<string>();
         public static List<string> NomeList = new List<string>();
         public static List<string> MetList = new List<string>();
+        public static String path_textboxjson;
 
         public string Nome { get; set; }
         public int Calorias { get; set; }
@@ -86,5 +90,70 @@ namespace Jsoncode
                 }
             }
         }
+
+        public static void writetoXMLJSON(XmlTextWriter writer, int i)
+        {
+            writer.WriteStartDocument(true);
+            writer.Formatting = Formatting.Indented;
+            writer.Indentation = 2;
+            writer.WriteStartElement("exercicios");
+
+            for (i = 0; i <= NomeList.Count - 1; i++)
+            {
+                createNodeJ(NomeList[i], CaloriasList[i], MetList[i], writer);
+            }
+            writer.WriteEndElement();
+            writer.WriteEndDocument();
+            writer.Close();
+        }
+
+        public static void createNodeJ(string nome, string calorias, string met, XmlTextWriter writer)
+        {
+            writer.WriteStartElement("exercicios");
+            writer.WriteStartElement("nome");
+            writer.WriteString(nome);
+            writer.WriteEndElement();
+            writer.WriteStartElement("calorias");
+            writer.WriteString(calorias);
+            writer.WriteEndElement();
+            writer.WriteStartElement("met");
+            writer.WriteString(met);
+            writer.WriteEndElement();
+            writer.WriteEndElement();
+        }
+    
+        public static void ValidateJson()
+        {
+        Boolean isValid = true;
+
+        try
+        {
+
+            XmlReaderSettings settings = new XmlReaderSettings();
+            settings.Schemas.Add(null, Environment.CurrentDirectory + "\\XSD\\XMLSchemaExercicios.xsd");
+            settings.ValidationType = ValidationType.Schema;
+
+            XmlReader reader = XmlReader.Create(path_textboxjson, settings);
+            XmlDocument document = new XmlDocument();
+            document.Load(reader);
+
+        }
+        catch (Exception ex)
+        {
+            isValid = false;
+            MessageBox.Show("Erro na validação do XML", "Erro de Validação", MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
+
+        }
+        finally
+        {
+            if (isValid != false)
+            {
+                MessageBox.Show("Sucesso na validação do XML", "Validação", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+        }
+
     }
+}
 }

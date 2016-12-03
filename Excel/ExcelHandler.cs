@@ -80,10 +80,9 @@ namespace ExcelCode
             writer.Indentation = 2;
             writer.WriteStartElement("restaurantes");
 
-            for (i = 0; i <= ExcelHandler.Restaurante.Count - 1; i++)
+            for (i = 0; i <= Restaurante.Count - 1; i++)
             {
-                createNode(ExcelHandler.Restaurante[i], ExcelHandler.Item[i], ExcelHandler.Quantidade[i],
-                    ExcelHandler.Calorias[i], writer);
+                createNode(Restaurante[i], Item[i], Quantidade[i],Calorias[i], writer);
             }
             writer.WriteEndElement();
             writer.WriteEndDocument();
@@ -93,7 +92,7 @@ namespace ExcelCode
         public static void createNode(string restaurante, string item, string quantidade, string calorias,
             XmlTextWriter writer)
         {
-            writer.WriteStartElement("restaurante");
+            writer.WriteStartElement("restaurantes");
             writer.WriteStartElement("restaurante");
             writer.WriteString(restaurante);
             writer.WriteEndElement();

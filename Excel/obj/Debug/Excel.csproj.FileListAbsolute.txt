@@ -12,3 +12,10 @@ C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\Excel\obj\Debug\Interop.Interop
 C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\Excel\obj\Debug\Excel.csproj.ResolveComReference.cache
 C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\Excel\obj\Debug\Excel.dll
 C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\Excel\obj\Debug\Excel.pdb
+D:\David_GIT\InterS\eNutre\Excel\bin\Debug\Excel.dll
+D:\David_GIT\InterS\eNutre\Excel\bin\Debug\Excel.pdb
+D:\David_GIT\InterS\eNutre\Excel\obj\Debug\Excel.csprojResolveAssemblyReference.cache
+D:\David_GIT\InterS\eNutre\Excel\obj\Debug\Interop.InteropExtensionLib.dll
+D:\David_GIT\InterS\eNutre\Excel\obj\Debug\Excel.csproj.ResolveComReference.cache
+D:\David_GIT\InterS\eNutre\Excel\obj\Debug\Excel.dll
+D:\David_GIT\InterS\eNutre\Excel\obj\Debug\Excel.pdb

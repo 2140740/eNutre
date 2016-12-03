@@ -127,55 +127,6 @@ namespace formMain
 
         }
 
-        private void ValidateAll_Click(object sender, EventArgs e)
-        {
-            if (path != null && extension.Equals(".xml"))
-            {
-                string pathfile = System.IO.Directory.GetCurrentDirectory() + "\\XSD";
-                openFileDialog1.InitialDirectory = pathfile;
-
-                openFileDialog1.Filter = "xsd files (*.xsd)|*.xsd";
-                openFileDialog1.FilterIndex = 2;
-                openFileDialog1.RestoreDirectory = true;
-
-                if (openFileDialog1.ShowDialog() == DialogResult.OK)
-                {
-                    path = openFileDialog1.FileName;
-                    try
-                    {
-
-                        if (openFileDialog1.FileName.Contains("XMLSchemaRestaurantes"))
-                        {
-                            ExcelHandler.path_textbox = textBox_path.Text;
-                            ExcelHandler.ValidateExcel();
-                        }
-                        else if (openFileDialog1.FileName.Contains("XMLSchemaExercicios"))
-                        {
-                            ValidateJson();
-                        }
-                        else if (openFileDialog1.FileName.Contains("XMLSchemaVegetais"))
-                        {
-                            ValidateTXT();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Path nao encontrado", "Caminho não Encontrado");
-                        }
-
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Erro, " + ex.Message);
-                    }
-                }
-
-            }
-            else
-            {
-                MessageBox.Show("Não escolheu nenhum XML", "Erro");
-            }
-        }
-
         private void button_JSON_Click(object sender, EventArgs e)
         {
             if (path != null && extension.Equals(".js"))
@@ -206,27 +157,16 @@ namespace formMain
 
                     if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                     {
-
+                        
                         XmlTextWriter writer =
                             new XmlTextWriter(saveFileDialog1.FileName,
                                 System.Text.Encoding.UTF8);
 
                         pathexercicios = saveFileDialog1.FileName;
 
-                        writer.WriteStartDocument(true);
-                        writer.Formatting = Formatting.Indented;
-                        writer.Indentation = 2;
-                        writer.WriteStartElement("exercicios");
+                        int i = 0;
+                        Json.writetoXMLJSON(writer, i);
 
-
-
-                        for (int i = 0; i <= Json.NomeList.Count - 1; i++)
-                        {
-                            createNodeJ(Json.NomeList[i], Json.CaloriasList[i], Json.MetList[i], writer);
-                        }
-                        writer.WriteEndElement();
-                        writer.WriteEndDocument();
-                        writer.Close();
                         MessageBox.Show("O ficheiro XML foi criado com sucesso ! ");
 
 
@@ -242,55 +182,6 @@ namespace formMain
                 MessageBox.Show("Essa extensão não é suportada neste botão", "Erro", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
             }
-        }
-
-        private void createNodeJ(string nome, string calorias, string met, XmlTextWriter writer)
-        {
-            writer.WriteStartElement("exercicio");
-            writer.WriteStartElement("nome");
-            writer.WriteString(nome);
-            writer.WriteEndElement();
-            writer.WriteStartElement("calorias");
-            writer.WriteString(calorias);
-            writer.WriteEndElement();
-            writer.WriteStartElement("met");
-            writer.WriteString(met);
-            writer.WriteEndElement();
-            writer.WriteEndElement();
-        }
-
-        private void ValidateJson()
-        {
-            Boolean isValid = true;
-
-            try
-            {
-
-                XmlReaderSettings settings = new XmlReaderSettings();
-                settings.Schemas.Add(null, Environment.CurrentDirectory + "\\XSD\\XMLSchemaExercicios.xsd");
-                settings.ValidationType = ValidationType.Schema;
-
-                XmlReader reader = XmlReader.Create(textBox_path.Text, settings);
-                XmlDocument document = new XmlDocument();
-                document.Load(reader);
-
-            }
-            catch (Exception ex)
-            {
-                isValid = false;
-                MessageBox.Show("Erro na validação do XML", "Erro de Validação", MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
-
-            }
-            finally
-            {
-                if (isValid != false)
-                {
-                    MessageBox.Show("Sucesso na validação do XML", "Validação", MessageBoxButtons.OK,
-                        MessageBoxIcon.Information);
-                }
-            }
-
         }
 
         private void button_TXT_Click(object sender, EventArgs e)
@@ -327,19 +218,9 @@ namespace formMain
 
                         pathvegetais = saveFileDialog1.FileName;
 
-                        writer.WriteStartDocument(true);
-                        writer.Formatting = Formatting.Indented;
-                        writer.Indentation = 2;
-                        writer.WriteStartElement("vegetais");
+                        int i = 0;
+                        Classtxtfile.writetoxmltxt(writer, i);
 
-                        for (int i = 0; i <= Classtxtfile.Calorias.Count - 1; i++)
-                        {
-                            createNodeT(Classtxtfile.Calorias[i], Classtxtfile.Produtos[i], Classtxtfile.Quantidades[i],
-                                writer);
-                        }
-                        writer.WriteEndElement();
-                        writer.WriteEndDocument();
-                        writer.Close();
                         MessageBox.Show("O ficheiro XML foi criado com sucesso ! ");
 
                     }
@@ -357,53 +238,55 @@ namespace formMain
             }
         }
 
-        private void createNodeT(string calorias, string nome, string quantidade, XmlTextWriter writer)
+        private void ValidateAll_Click(object sender, EventArgs e)
         {
-            writer.WriteStartElement("vegetal");
-            writer.WriteStartElement("calorias");
-            writer.WriteString(calorias);
-            writer.WriteEndElement();
-            writer.WriteStartElement("nome");
-            writer.WriteString(nome);
-            writer.WriteEndElement();
-            writer.WriteStartElement("quantidade");
-            writer.WriteString(quantidade);
-            writer.WriteEndElement();
-            writer.WriteEndElement();
-        }
-
-        private void ValidateTXT()
-        {
-            Boolean isValid = true;
-
-            try
+            if (path != null && extension.Equals(".xml"))
             {
+                string pathfile = System.IO.Directory.GetCurrentDirectory() + "\\XSD";
+                openFileDialog1.InitialDirectory = pathfile;
 
-                XmlReaderSettings settings = new XmlReaderSettings();
-                settings.Schemas.Add(null, Environment.CurrentDirectory + "\\XSD\\XMLSchemaVegetais.xsd");
-                settings.ValidationType = ValidationType.Schema;
+                openFileDialog1.Filter = "xsd files (*.xsd)|*.xsd";
+                openFileDialog1.FilterIndex = 2;
+                openFileDialog1.RestoreDirectory = true;
 
-                XmlReader reader = XmlReader.Create(textBox_path.Text, settings);
-                XmlDocument document = new XmlDocument();
-                document.Load(reader);
-
-            }
-            catch (Exception ex)
-            {
-                isValid = false;
-                MessageBox.Show("Erro na validação do XML", "Erro de Validação", MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
-
-            }
-            finally
-            {
-                if (isValid != false)
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-                    MessageBox.Show("Sucesso na validação do XML", "Validação", MessageBoxButtons.OK,
-                        MessageBoxIcon.Information);
-                }
-            }
+                    path = openFileDialog1.FileName;
+                    try
+                    {
 
+                        if (openFileDialog1.FileName.Contains("XMLSchemaRestaurantes"))
+                        {
+                            ExcelHandler.path_textbox = textBox_path.Text;
+                            ExcelHandler.ValidateExcel();
+                        }
+                        else if (openFileDialog1.FileName.Contains("XMLSchemaExercicios"))
+                        {
+                            Json.path_textboxjson = textBox_path.Text;
+                            Json.ValidateJson();
+                        }
+                        else if (openFileDialog1.FileName.Contains("XMLSchemaVegetais"))
+                        {
+                            Classtxtfile.pathtxt = textBox_path.Text;
+                            Classtxtfile.ValidateTXT();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Path nao encontrado", "Caminho não Encontrado");
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro, " + ex.Message);
+                    }
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Não escolheu nenhum XML", "Erro");
+            }
         }
     }
 }

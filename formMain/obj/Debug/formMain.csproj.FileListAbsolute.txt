@@ -65,3 +65,21 @@ C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\formMain\obj\Debug\formMain.csp
 C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\formMain\obj\Debug\formMain.exe
 C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\formMain\obj\Debug\formMain.pdb
 C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\formMain\obj\Debug\formMain.csprojResolveAssemblyReference.cache
+D:\David_GIT\InterS\eNutre\formMain\bin\Debug\formMain.exe.config
+D:\David_GIT\InterS\eNutre\formMain\bin\Debug\formMain.exe
+D:\David_GIT\InterS\eNutre\formMain\bin\Debug\formMain.pdb
+D:\David_GIT\InterS\eNutre\formMain\bin\Debug\Excel.dll
+D:\David_GIT\InterS\eNutre\formMain\bin\Debug\Json.dll
+D:\David_GIT\InterS\eNutre\formMain\bin\Debug\TXT.dll
+D:\David_GIT\InterS\eNutre\formMain\bin\Debug\Newtonsoft.Json.dll
+D:\David_GIT\InterS\eNutre\formMain\bin\Debug\Excel.pdb
+D:\David_GIT\InterS\eNutre\formMain\bin\Debug\Json.pdb
+D:\David_GIT\InterS\eNutre\formMain\bin\Debug\TXT.pdb
+D:\David_GIT\InterS\eNutre\formMain\bin\Debug\Newtonsoft.Json.xml
+D:\David_GIT\InterS\eNutre\formMain\obj\Debug\formMain.csprojResolveAssemblyReference.cache
+D:\David_GIT\InterS\eNutre\formMain\obj\Debug\formMain.csproj.ResolveComReference.cache
+D:\David_GIT\InterS\eNutre\formMain\obj\Debug\formMain.Main.resources
+D:\David_GIT\InterS\eNutre\formMain\obj\Debug\formMain.Properties.Resources.resources
+D:\David_GIT\InterS\eNutre\formMain\obj\Debug\formMain.csproj.GenerateResource.Cache
+D:\David_GIT\InterS\eNutre\formMain\obj\Debug\formMain.exe
+D:\David_GIT\InterS\eNutre\formMain\obj\Debug\formMain.pdb

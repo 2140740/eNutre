@@ -8,3 +8,8 @@ C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\TXT\bin\Debug\TXT.pdb
 C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\TXT\obj\Debug\TXT.csprojResolveAssemblyReference.cache
 C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\TXT\obj\Debug\TXT.dll
 C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\TXT\obj\Debug\TXT.pdb
+D:\David_GIT\InterS\eNutre\TXT\bin\Debug\TXT.dll
+D:\David_GIT\InterS\eNutre\TXT\bin\Debug\TXT.pdb
+D:\David_GIT\InterS\eNutre\TXT\obj\Debug\TXT.csprojResolveAssemblyReference.cache
+D:\David_GIT\InterS\eNutre\TXT\obj\Debug\TXT.dll
+D:\David_GIT\InterS\eNutre\TXT\obj\Debug\TXT.pdb

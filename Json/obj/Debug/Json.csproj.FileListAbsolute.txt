@@ -12,3 +12,10 @@ C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\Json\bin\Debug\Newtonsoft.Json.
 C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\Json\obj\Debug\Json.csprojResolveAssemblyReference.cache
 C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\Json\obj\Debug\Json.dll
 C:\Users\david\Dropbox\InterS\1ª Entrega\eNutre\Json\obj\Debug\Json.pdb
+D:\David_GIT\InterS\eNutre\Json\bin\Debug\Json.dll
+D:\David_GIT\InterS\eNutre\Json\bin\Debug\Json.pdb
+D:\David_GIT\InterS\eNutre\Json\bin\Debug\Newtonsoft.Json.dll
+D:\David_GIT\InterS\eNutre\Json\bin\Debug\Newtonsoft.Json.xml
+D:\David_GIT\InterS\eNutre\Json\obj\Debug\Json.csprojResolveAssemblyReference.cache
+D:\David_GIT\InterS\eNutre\Json\obj\Debug\Json.dll
+D:\David_GIT\InterS\eNutre\Json\obj\Debug\Json.pdb

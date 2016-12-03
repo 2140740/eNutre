@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Xml;
 
 namespace ClassTXT
 {
@@ -15,6 +17,7 @@ namespace ClassTXT
         public static List<string> Produtos = new List<string>();
         public static List<string> Quantidades = new List<string>();
         public static string varerror;
+        public static string pathtxt;
 
         public static void Readfile(string path)
         {
@@ -66,6 +69,72 @@ namespace ClassTXT
             {
                 varerror = (ex.ToString());
             }
+        }
+
+        public static void writetoxmltxt(XmlTextWriter writer, int i)
+        {
+            writer.WriteStartDocument(true);
+            writer.Formatting = Formatting.Indented;
+            writer.Indentation = 2;
+            writer.WriteStartElement("vegetais");
+
+            for (i = 0; i <= Calorias.Count - 1; i++)
+            {
+                createNodeT(Calorias[i], Produtos[i], Quantidades[i],
+                    writer);
+            }
+            writer.WriteEndElement();
+            writer.WriteEndDocument();
+            writer.Close();
+        }
+
+        public static void createNodeT(string calorias, string nome, string quantidade, XmlTextWriter writer)
+        {
+            writer.WriteStartElement("vegetal");
+            writer.WriteStartElement("calorias");
+            writer.WriteString(calorias);
+            writer.WriteEndElement();
+            writer.WriteStartElement("nome");
+            writer.WriteString(nome);
+            writer.WriteEndElement();
+            writer.WriteStartElement("quantidade");
+            writer.WriteString(quantidade);
+            writer.WriteEndElement();
+            writer.WriteEndElement();
+        }
+
+        public static void ValidateTXT()
+        {
+            Boolean isValid = true;
+
+            try
+            {
+
+                XmlReaderSettings settings = new XmlReaderSettings();
+                settings.Schemas.Add(null, Environment.CurrentDirectory + "\\XSD\\XMLSchemaVegetais.xsd");
+                settings.ValidationType = ValidationType.Schema;
+
+                XmlReader reader = XmlReader.Create(pathtxt, settings);
+                XmlDocument document = new XmlDocument();
+                document.Load(reader);
+
+            }
+            catch (Exception ex)
+            {
+                isValid = false;
+                MessageBox.Show("Erro na validação do XML", "Erro de Validação", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+
+            }
+            finally
+            {
+                if (isValid != false)
+                {
+                    MessageBox.Show("Sucesso na validação do XML", "Validação", MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                }
+            }
+
         }
     }
 }
