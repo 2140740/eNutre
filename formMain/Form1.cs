@@ -29,7 +29,8 @@ namespace formMain
         public string xml = null;
         private string extension = null;
 
-        private void button_upload_Click(object sender, EventArgs e)
+        private
+            void button_upload_Click(object sender, EventArgs e)
         {
             /// Código Load do Ficheiro ////
 
@@ -37,8 +38,6 @@ namespace formMain
             openFileDialog1.InitialDirectory = "C:";
             openFileDialog1.FilterIndex = 2;
             openFileDialog1.RestoreDirectory = true;
-
-
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -68,8 +67,10 @@ namespace formMain
 
         private void button_Excel_Click(object sender, EventArgs e)
         {
+
             if (path != null && extension.Equals(".xls"))
             {
+
                 try
                 {
                     SaveFileDialog saveFileDialog1 = new SaveFileDialog();
@@ -105,7 +106,7 @@ namespace formMain
 
                         ExcelHandler.writetoXML(writer, i);
 
-                       
+
                         MessageBox.Show("O ficheiro XML foi criado com sucesso ! ");
                     }
 
@@ -157,7 +158,7 @@ namespace formMain
 
                     if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                     {
-                        
+
                         XmlTextWriter writer =
                             new XmlTextWriter(saveFileDialog1.FileName,
                                 System.Text.Encoding.UTF8);
