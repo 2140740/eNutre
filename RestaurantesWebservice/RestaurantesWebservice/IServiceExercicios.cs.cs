@@ -5,11 +5,11 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
-/*
+
 namespace RestaurantesWebservice
 {
     [ServiceContract]
-    public interface IServiceVegetais
+    public interface IServiceExercicios
     {
         // AUTHENTICATION
         [WebInvoke(Method = "POST", UriTemplate = "/signup?token={token}")]
@@ -35,44 +35,37 @@ namespace RestaurantesWebservice
         //-----------------------------------------------------------------------------------------------------------------------------------
         //-----------------------------------------------------------------------------------------------------------------------------------
         //-----------------------------------------------------------------------------------------------------------------------------------
-        // GET VEGETAIS
+        // GET EXERCICIOS
         [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "/vegetal?token={token}")]
-        List<Vegetais> GetVegetais(string token);
+        [WebInvoke(Method = "GET", UriTemplate = "/exercicio?token={token}")]
+        List<Exercicios> GetExercicio(string token);
 
         // admin only
-        // ADD VEGETAIS
+        // ADD EXERCICIOS
         [OperationContract]
-        [WebInvoke(Method = "POST", UriTemplate = "/vegetal?token={token}")]
-        void AddVegetal(Vegetais vegetais, string token);
+        [WebInvoke(Method = "POST", UriTemplate = "/exercicio?token={token}")]
+        void AddExercicio(Exercicios exercicios, string token);
 
         // admin only
-        // DELETE VEGETAIS
-        [OperationContract(Name = "DeleteVegetaisByTitle")]
-        [WebInvoke(Method = "DELETE", UriTemplate = "/vegetal/{vegetal}?token={token}")]
-        void DeleteVegetal(string vegetal, string token); // admin only
+        // DELETE EXERCICIOS
+        [OperationContract(Name = "DeleteExercicioisByTitle")]
+        [WebInvoke(Method = "DELETE", UriTemplate = "/exercicio/{exercicio}?token={token}")]
+        void DeleteExercicio(string exercicio, string token); // admin only
 
     }
 
     [DataContract]
-    public class Vegetais
+    public class Exercicios
     {
-        private string calorias;
         private string nome;
-        private string quantidade;
+        private string calorias;
+        private string met;
 
-        public Vegetais(string calorias, string nome, string quantidade)
+        public Exercicios(string nome, string calorias, string met)
         {
-            this.calorias = calorias;
             this.nome = nome;
-            this.quantidade = quantidade;
-        }
-
-        [DataMember]
-        public string Calorias
-        {
-            get { return calorias; }
-            set { calorias = value; }
+            this.calorias = calorias;
+            this.met = met;
         }
 
         [DataMember]
@@ -80,22 +73,29 @@ namespace RestaurantesWebservice
         {
             get { return nome; }
             set { nome = value; }
+        }
+
+        [DataMember]
+        public string Calorias
+        {
+            get { return calorias; }
+            set { calorias = value; }
 
         }
 
         [DataMember]
-        public string Quantidade
+        public string Met
         {
-            get { return quantidade; }
-            set { quantidade = value; }
+            get { return met; }
+            set { met = value; }
         }
 
         public override string ToString()
         {
             string res = String.Empty;
-            res += "Calorias: " + Calorias + Environment.NewLine;
             res += "Nome: " + Nome + Environment.NewLine;
-            res += "Quantidade: " + Quantidade + Environment.NewLine;
+            res += "Calorias: " + Calorias + Environment.NewLine;
+            res += "Met: " + Met + Environment.NewLine;
             return res;
         }
     }
@@ -137,4 +137,4 @@ namespace RestaurantesWebservice
         }
     }
 }
-*/
+

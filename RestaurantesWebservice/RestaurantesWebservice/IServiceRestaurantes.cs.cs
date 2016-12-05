@@ -5,9 +5,10 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
-
+/*
 namespace RestaurantesWebservice
 {
+    
     [ServiceContract]
     public interface IServiceRestaurantes
     {
@@ -109,6 +110,6 @@ namespace RestaurantesWebservice
             return res;
         }
     }
-
+    
 }
-
+*/

@@ -9,14 +9,14 @@ using System.Web.Hosting;
 using System.IO;
 using System.Xml;
 using System.Globalization;
-/*
+
 namespace RestaurantesWebservice
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
 
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
-    public class ServiceVegetais : IServiceVegetais
+    public class ServiceExercicios : IServiceExercicios
     {
         //chave : username 
         //valor: objecto user propriamente dito
@@ -73,7 +73,7 @@ namespace RestaurantesWebservice
             }
         }
 
-        public ServiceVegetais()
+        public ServiceExercicios()
         {
             this.users = new Dictionary<string, User>();
             this.tokens = new Dictionary<string, Token>();
@@ -83,7 +83,7 @@ namespace RestaurantesWebservice
             users.Add("admin", new User("admin", "admin", true));
 
             //define a filepath do ficheiro bookstore.xml
-            FILEPATH = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data", "vegetais.xml");
+            FILEPATH = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data", "json.xml");
         }
 
         public void SignUp(User user, string token)
@@ -190,64 +190,63 @@ namespace RestaurantesWebservice
 
         //------------------------------------------------------------------------------------------------------------------------------
 
-        public List<Vegetais> GetVegetais(string token)
+        public List<Exercicios> GetExercicio(string token)
         {
             checkAuthentication(token, false);
             XmlDocument doc = new XmlDocument();
             doc.Load(FILEPATH);
-            List<Vegetais> vegetal = new List<Vegetais>();
-            XmlNodeList vegetaisNodes = doc.SelectNodes("/vegetais/vegetal");
-            foreach (XmlNode vegetalNode in vegetaisNodes)
-            {
-                XmlNode vegetalCaloriasNode = vegetalNode.SelectSingleNode("calorias");
-                XmlNode vegetalNomeNode = vegetalNode.SelectSingleNode("nome");
-                XmlNode vegetalquantidadeNode = vegetalNode.SelectSingleNode("quantidade");
-                Vegetais vegetais = new Vegetais(
-                vegetalCaloriasNode.InnerText,
-                vegetalNomeNode.InnerText,
-                vegetalquantidadeNode.InnerText);
-                vegetal.Add(vegetais);
+            List<Exercicios> exercicio = new List<Exercicios>();
+            XmlNodeList exercicioNodes = doc.SelectNodes("/exercicios/exercicio");
+            foreach (XmlNode exercicioNode in exercicioNodes)
+            {        
+                XmlNode exercicioNomeNode = exercicioNode.SelectSingleNode("nome");
+                XmlNode exercicioCaloriasNode = exercicioNode.SelectSingleNode("calorias");
+                XmlNode exercicioMetNode = exercicioNode.SelectSingleNode("met");
+                Exercicios exercicios = new Exercicios(
+                exercicioNomeNode.InnerText,
+                exercicioCaloriasNode.InnerText,
+                exercicioMetNode.InnerText);
+                exercicio.Add(exercicios);
             }
-            return vegetal;
+            return exercicio;
         }
 
-        public void AddVegetal(Vegetais vegetal, string token)
+        public void AddExercicio(Exercicios exercicios, string token)
         {
             checkAuthentication(token, true);
             XmlDocument doc = new XmlDocument();
             doc.Load(FILEPATH);
-            XmlNode vegetalNode = doc.SelectSingleNode("/vegetais");
-            XmlElement vegetal_Node = doc.CreateElement("vegetal");
+            XmlNode exercicioNode = doc.SelectSingleNode("/exercicios");
+            XmlElement exercicio_Node = doc.CreateElement("exercicio");
 
-            XmlElement vegetalCaloriasNode = doc.CreateElement("calorias");
-            vegetalCaloriasNode.InnerText = vegetal.Calorias;
-            vegetal_Node.AppendChild(vegetalCaloriasNode);
+            XmlElement exercicioNomeNode = doc.CreateElement("nome");
+            exercicioNomeNode.InnerText = exercicios.Nome;
+            exercicio_Node.AppendChild(exercicioNomeNode);
 
-            XmlElement vegetalNomeNode = doc.CreateElement("nome");
-            vegetalNomeNode.InnerText = vegetal.Nome;
-            vegetal_Node.AppendChild(vegetalNomeNode);
+            XmlElement exercicioCaloriasNode = doc.CreateElement("calorias");
+            exercicioCaloriasNode.InnerText = exercicios.Calorias;
+            exercicio_Node.AppendChild(exercicioCaloriasNode);
 
-            XmlElement vegetalquantidadeNode = doc.CreateElement("quantidade");
-            vegetalquantidadeNode.InnerText = vegetal.Quantidade;
-            vegetal_Node.AppendChild(vegetalquantidadeNode);
+            XmlElement exerciciometNode = doc.CreateElement("met");
+            exerciciometNode.InnerText = exercicios.Met;
+            exercicio_Node.AppendChild(exerciciometNode);
 
-            vegetalNode.AppendChild(vegetal_Node);
+            exercicioNode.AppendChild(exercicio_Node);
             doc.Save(FILEPATH);
         }
 
-        public void DeleteVegetal(string vegetal, string token)
+        public void DeleteExercicio(string exercicio, string token)
         {
             checkAuthentication(token, true);
             XmlDocument doc = new XmlDocument();
             doc.Load(FILEPATH);
-            XmlNode vegetalNode = doc.SelectSingleNode("/vegetais");
-            XmlNode vegetaisNode = doc.SelectSingleNode("/vegetais/vegetal[nome='" + vegetal + "']");
-            if (vegetaisNode != null)
+            XmlNode exercicioNode = doc.SelectSingleNode("/exercicios");
+            XmlNode exerciciosNode = doc.SelectSingleNode("/exercicios/exercicio[nome='" + exercicio + "']");
+            if (exerciciosNode != null)
             {
-                vegetalNode.RemoveChild(vegetaisNode);
+                exercicioNode.RemoveChild(exerciciosNode);
                 doc.Save(FILEPATH);
             }
         }
     }
 }
-*/

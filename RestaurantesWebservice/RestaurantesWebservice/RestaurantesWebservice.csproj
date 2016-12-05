@@ -92,12 +92,17 @@
     <Content Include="App_Data\json.xml" />
     <Content Include="App_Data\restaurantes.xml" />
     <Content Include="App_Data\vegetais.xml" />
+    <Content Include="ServiceExercicios.svc.svc" />
     <Content Include="ServiceRestaurantes.svc.svc" />
     <Content Include="ServiceVegetais.svc.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IServiceExercicios.cs.cs" />
     <Compile Include="IServiceVegetais.cs.cs" />
+    <Compile Include="ServiceExercicios.svc.svc.cs">
+      <DependentUpon>ServiceExercicios.svc.svc</DependentUpon>
+    </Compile>
     <Compile Include="ServiceRestaurantes.svc.svc.cs">
       <DependentUpon>ServiceRestaurantes.svc.svc</DependentUpon>
     </Compile>
