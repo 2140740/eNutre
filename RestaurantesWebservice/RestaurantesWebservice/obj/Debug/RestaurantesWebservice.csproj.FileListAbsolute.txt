@@ -17,3 +17,21 @@ c:\users\casa\documents\visual studio 2015\Projects\RestaurantesWebservice\Resta
 c:\users\casa\documents\visual studio 2015\Projects\RestaurantesWebservice\RestaurantesWebservice\obj\Debug\RestaurantesWebservice.csprojResolveAssemblyReference.cache
 c:\users\casa\documents\visual studio 2015\Projects\RestaurantesWebservice\RestaurantesWebservice\obj\Debug\RestaurantesWebservice.dll
 c:\users\casa\documents\visual studio 2015\Projects\RestaurantesWebservice\RestaurantesWebservice\obj\Debug\RestaurantesWebservice.pdb
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\bin\ApplicationInsights.config
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\bin\RestaurantesWebservice.dll.config
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\bin\RestaurantesWebservice.dll
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\bin\RestaurantesWebservice.pdb
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\bin\Microsoft.AI.Agent.Intercept.dll
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\bin\Microsoft.AI.DependencyCollector.dll
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\bin\Microsoft.AI.Web.dll
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\bin\Microsoft.AI.WindowsServer.dll
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\bin\Microsoft.ApplicationInsights.dll
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\bin\Microsoft.AI.DependencyCollector.xml
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\bin\Microsoft.AI.Web.xml
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\bin\Microsoft.AI.WindowsServer.xml
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\bin\Microsoft.ApplicationInsights.xml
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\obj\Debug\RestaurantesWebservice.dll
+D:\David_GIT\InterS\eNutre\RestaurantesWebservice\RestaurantesWebservice\obj\Debug\RestaurantesWebservice.pdb

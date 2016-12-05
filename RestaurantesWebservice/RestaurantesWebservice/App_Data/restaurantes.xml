@@ -2,6 +2,24 @@
 <restaurantes>
   <restaurante>
     <restaurante>h3</restaurante>
+    <item>Hambúrguer bem Passado</item>
+    <quantidade>1 dose (200g)</quantidade>
+    <calorias>304 kcal</calorias>
+  </restaurante>
+  <restaurante>
+    <restaurante>h3</restaurante>
+    <item>Limonada sem Açúcar</item>
+    <quantidade>1 dose</quantidade>
+    <calorias>10 kcal</calorias>
+  </restaurante>
+  <restaurante>
+    <restaurante>h3</restaurante>
+    <item>H3 Arroz</item>
+    <quantidade>1/2 dose</quantidade>
+    <calorias>195 kcal</calorias>
+  </restaurante>
+  <restaurante>
+    <restaurante>h3</restaurante>
     <item>Batatas Fritas (1/2 dose)</item>
     <quantidade>1/2 dose</quantidade>
     <calorias>274 kcal</calorias>

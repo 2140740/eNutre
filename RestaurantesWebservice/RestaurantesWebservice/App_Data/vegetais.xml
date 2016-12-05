@@ -1,0 +1,708 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<vegetais>
+  <vegetal>
+    <calorias>83</calorias>
+    <nome>Abóbora sem Sal, Enlatado</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>46</calorias>
+    <nome>Abóbora Cozida</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>6</calorias>
+    <nome>Aipo</nome>
+    <quantidade>1 talo, médio</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>60</calorias>
+    <nome>Aipo Cozido</nome>
+    <quantidade>1 chávena, cortado em cubos</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>60</calorias>
+    <nome>Alcachofras Cabeça ou Francês</nome>
+    <quantidade>1 média</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>84</calorias>
+    <nome>Alcachofra Cozida de Alcachofra Fresca</nome>
+    <quantidade>1 cabeça média</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>116</calorias>
+    <nome>Alcachofra Cozida Enlatado</nome>
+    <quantidade>1 chávena, corações</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>33</calorias>
+    <nome>Corações de Alcachofras em Óleo</nome>
+    <quantidade>1 </quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>8</calorias>
+    <nome>Alface</nome>
+    <quantidade>1 chávena, desfiada ou cortada</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>5</calorias>
+    <nome>Alface de Folha Verde</nome>
+    <quantidade>1 chávena, desfiada</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>9</calorias>
+    <nome>Salada Verde Mista</nome>
+    <quantidade>1 chávena, desfiada ou cortada</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>8</calorias>
+    <nome>Alface Romana</nome>
+    <quantidade>1 chávena, desfiada</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>5</calorias>
+    <nome>Alface Rúcula</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>4</calorias>
+    <nome>Alho</nome>
+    <quantidade>1 dente</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>5</calorias>
+    <nome>Alho Picado</nome>
+    <quantidade>1 colher de chá</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>3</calorias>
+    <nome>Alho Cozido</nome>
+    <quantidade>1 dente</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>9</calorias>
+    <nome>Alho em Pó</nome>
+    <quantidade>1 colher de chá</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>54</calorias>
+    <nome>Alhos Franceses</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>79</calorias>
+    <nome>Alho Françês Cozido</nome>
+    <quantidade>1 </quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>5</calorias>
+    <nome>Azeitonas</nome>
+    <quantidade>1 média</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>36</calorias>
+    <nome>Azeitonas Pretas</nome>
+    <quantidade>1 dose de 10 pequenas</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>42</calorias>
+    <nome>Azeitonas Verdes</nome>
+    <quantidade>1 dose de 10 pequenas</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>44</calorias>
+    <nome>Azeitonas Verdes Recheadas</nome>
+    <quantidade>1 dose de 10 pequenas</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>145</calorias>
+    <nome>Azeitonas Verdes Conserva, Enlatado ou Engarrafado</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>86</calorias>
+    <nome>Batata Doce</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>76</calorias>
+    <nome>Batata-Doce sem Casca, Cozido, Fervido</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>90</calorias>
+    <nome>Batata-Doce sem Sal, no Forno com Casca, Cozido</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>258</calorias>
+    <nome>Batata-Doce Puré, Enlatado</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>119</calorias>
+    <nome>Batatas Brancas com Casca</nome>
+    <quantidade>1 pequena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>130</calorias>
+    <nome>Batatas Brancas com Casca, no Forno</nome>
+    <quantidade>1 pequena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>210</calorias>
+    <nome>Puré de Batata</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>203</calorias>
+    <nome>Batata Assada</nome>
+    <quantidade>1 média</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>118</calorias>
+    <nome>Batatas sem Casca, com Sal, Cozido</nome>
+    <quantidade>1 </quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>194</calorias>
+    <nome>Batata no Forno Casca Consumida</nome>
+    <quantidade>1 média</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>121</calorias>
+    <nome>Batata no Forno Casca Não Consumida</nome>
+    <quantidade>1 média</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>316</calorias>
+    <nome>Batata no Forno Recheada com Creme Azedo Casca Consumida</nome>
+    <quantidade>1 média</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>322</calorias>
+    <nome>Batata no Forno Recheada com Bacon e Queijo Casca Consumida</nome>
+    <quantidade>1 média</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>288</calorias>
+    <nome>Batata no Forno Recheada com Queijo Casca Consumida</nome>
+    <quantidade>1 média</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>24</calorias>
+    <nome>Beringela</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>66</calorias>
+    <nome>Beringela Cozida</nome>
+    <quantidade>1 chávena, em cubos</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>74</calorias>
+    <nome>Panado de Beringela</nome>
+    <quantidade>1 fatia</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>154</calorias>
+    <nome>Ratatouille</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>43</calorias>
+    <nome>Beterrabas</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>148</calorias>
+    <nome>Beterrabas em Conserva Sólido e Líquido, Enlatado</nome>
+    <quantidade>1 chávena, fatias</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>7</calorias>
+    <nome>Beterraba Sólidos Escorridos, Enlatado</nome>
+    <quantidade>1 </quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>99</calorias>
+    <nome>Beterrabas Cozidas de Beterrabas Frescas</nome>
+    <quantidade>1 chávena, cortadas em cubos</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>34</calorias>
+    <nome>Brócolos</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>34</calorias>
+    <nome>Brócolos Cozidos Cozinhado sem Gordura Adicionada</nome>
+    <quantidade>1 chávena, ramos</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>22</calorias>
+    <nome>Grelos</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>19</calorias>
+    <nome>Brócolos Chineses Cozido</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>29</calorias>
+    <nome>Brócolos Inteiro, Congeladas</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>42</calorias>
+    <nome>Cebolas</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>42</calorias>
+    <nome>Cebolas Vermelhas</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>32</calorias>
+    <nome>Cebolinho</nome>
+    <quantidade>1 chávena, cortado</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>32</calorias>
+    <nome>Cebolas Doces</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>2</calorias>
+    <nome>Cebolinho Verde</nome>
+    <quantidade>1 colher de sopa</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>41</calorias>
+    <nome>Cenouras</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>35</calorias>
+    <nome>Cenouras Bebé</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>82</calorias>
+    <nome>Cenouras Cozidas</nome>
+    <quantidade>1 chávena, fatiadas</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>28</calorias>
+    <nome>Cenouras Sólido e Líquido, Enlatado</nome>
+    <quantidade>1/2 chávena, fatias</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>22</calorias>
+    <nome>Cogumelos</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>25</calorias>
+    <nome>Cogumelos Sólidos Escorridos, Enlatado</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>26</calorias>
+    <nome>Cogumelos Portobello</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>52</calorias>
+    <nome>Cogumelo Ostra</nome>
+    <quantidade>1 grande</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>44</calorias>
+    <nome>Cogumelos Cozidos Cozinhado sem Gordura Adicionada</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>68</calorias>
+    <nome>Courgete Cozida</nome>
+    <quantidade>1 chávena, fatias</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>18</calorias>
+    <nome>Courgete Amarela</nome>
+    <quantidade>1 chávena, fatiada</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>21</calorias>
+    <nome>Repolho</nome>
+    <quantidade>1 chávena, cortado</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>28</calorias>
+    <nome>Repolho-Roxo</nome>
+    <quantidade>1 chávena, cortado</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>24</calorias>
+    <nome>Repolho Verde</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>19</calorias>
+    <nome>Couve Lombarda</nome>
+    <quantidade>1 chávena, desfiada</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>5</calorias>
+    <nome>Repolho Chinês</nome>
+    <quantidade>1 dose</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>38</calorias>
+    <nome>Couves de Bruxelas</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>41</calorias>
+    <nome>Couves de Bruxelas Congelado</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>88</calorias>
+    <nome>Couves de Bruxelas Cozidas</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>34</calorias>
+    <nome>Couve-de-Folhas</nome>
+    <quantidade>1 chávena, cortada</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>69</calorias>
+    <nome>Couve-de-Folhas Cozida de Couve Fresca</nome>
+    <quantidade>1 chávena, fresca</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>25</calorias>
+    <nome>Couve-Flor</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>24</calorias>
+    <nome>Couve-Flor Congelado</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>40</calorias>
+    <nome>Couve-Flor Cozida Cozinhado sem Gordura Adicionada</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>34</calorias>
+    <nome>Couve-Flor Cozida de Couve-Flor Congelada, Cozinhado sem Gordura Adicionada</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>29</calorias>
+    <nome>Couve-Flor Cozida de Couve-Flor Fresca, Cozinhado sem Gordura Adicionada</nome>
+    <quantidade>1 chávena, pedaços</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>16</calorias>
+    <nome>Courgette</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>2</calorias>
+    <nome>Courgette Bebé</nome>
+    <quantidade>1 média</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>14</calorias>
+    <nome>Courgette com Sal, Escorrido, Cozido</nome>
+    <quantidade>1/2 chávena, fatias</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>68</calorias>
+    <nome>Courgete Cozida de Courgete Fresca</nome>
+    <quantidade>1 chávena, fatias</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>117</calorias>
+    <nome>Ervilhas</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>42</calorias>
+    <nome>Vagem</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>77</calorias>
+    <nome>Ervilhas Congelado</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>86</calorias>
+    <nome>Ervilhas Cozidas Enlatado</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>27</calorias>
+    <nome>Espargos</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>6</calorias>
+    <nome>Espargos Cozidos de Espargos Frescos</nome>
+    <quantidade>1 rebento médio</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>3</calorias>
+    <nome>Espargos Sólidos Escorridos, Enlatado</nome>
+    <quantidade>1 rebento</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>14</calorias>
+    <nome>Espargos sem Preparação, Congelado</nome>
+    <quantidade>4 rebentos</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>7</calorias>
+    <nome>Espinafre</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>48</calorias>
+    <nome>Espinafre Folha ou Cortado, Congelado</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>7</calorias>
+    <nome>Espinafre Bébe</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>49</calorias>
+    <nome>Espinafre Sólidos Escorridos, Enlatado</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>74</calorias>
+    <nome>Espinafre Cozido de Espinafre Fresco</nome>
+    <quantidade>1 chávena, fresco</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>177</calorias>
+    <nome>Inhame</nome>
+    <quantidade>1 chávena, em cubos</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>158</calorias>
+    <nome>Inhame com Sal, Escorrido, Cozido, Fervido</nome>
+    <quantidade>1 chávena, em cubos</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>158</calorias>
+    <nome>Inhame sem Sal, Escorrido, Cozido, Fervido, no Forno</nome>
+    <quantidade>1 chávena, em cubos</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>86</calorias>
+    <nome>Milho</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>86</calorias>
+    <nome>Milho Doce Amarelo</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>6</calorias>
+    <nome>Milho Bébe</nome>
+    <quantidade>1 espiga</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>81</calorias>
+    <nome>Milho Doce Amarelo Miolo Inteiro, Sólidos Escorridos, Enlatado</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>155</calorias>
+    <nome>Milho em Espiga com Manteiga</nome>
+    <quantidade>1 </quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>28</calorias>
+    <nome>Nabos</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>67</calorias>
+    <nome>Nabo Cozido</nome>
+    <quantidade>1 chávena, pedaços</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>45</calorias>
+    <nome>Pepino com Casca</nome>
+    <quantidade>1 </quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>12</calorias>
+    <nome>Pepino Descascado</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>187</calorias>
+    <nome>Picles de Pepino Doce</nome>
+    <quantidade>1 chávena, cortados</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>3</calorias>
+    <nome>Picles de Pepino Azedo</nome>
+    <quantidade>1 rebento</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>12</calorias>
+    <nome>Picles de Pepino com Endro</nome>
+    <quantidade>1 médio</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>18</calorias>
+    <nome>Picles</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>18</calorias>
+    <nome>Picles de Pepino com Endro Baixo Teor de Sódio</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>39</calorias>
+    <nome>Pimentões Vermelhos</nome>
+    <quantidade>1 chávena, cortados</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>20</calorias>
+    <nome>Pimentos Verdes</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>14</calorias>
+    <nome>Pimentão Amarelo</nome>
+    <quantidade>10 tiras</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>26</calorias>
+    <nome>Pimentos</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>4</calorias>
+    <nome>Pimentas Jalapeno</nome>
+    <quantidade>1 </quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>256</calorias>
+    <nome>Puré de Batata de Batata Fresca</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>220</calorias>
+    <nome>Puré de Batata de Batata Seca</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>174</calorias>
+    <nome>Puré de Batatas com Leite Integral</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>237</calorias>
+    <nome>Puré de Batatas com Leite Integral e Manteiga</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>31</calorias>
+    <nome>Quiabo</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>81</calorias>
+    <nome>Quiabo Cozido</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>173</calorias>
+    <nome>Panados de Quiabo</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>30</calorias>
+    <nome>Quiabo Congelado</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>1</calorias>
+    <nome>Rabanetes</nome>
+    <quantidade>1 médio</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>22</calorias>
+    <nome>Tomates</nome>
+    <quantidade>1 médio e inteiro</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>22</calorias>
+    <nome>Tomates Vermelhos</nome>
+    <quantidade>1 médio e inteiro</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>17</calorias>
+    <nome>Tomates Vermelhos Enlatado</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>32</calorias>
+    <nome>Tomates Esmagados Enlatado</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>3</calorias>
+    <nome>Tomates Cereja</nome>
+    <quantidade>1 </quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>88</calorias>
+    <nome>Mistura de Vegetais Sólido e Líquido, Enlatado</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>80</calorias>
+    <nome>Mistura de Vegetais Sólidos Escorridos, Enlatado</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>64</calorias>
+    <nome>Mistura de Vegetais Congelado</nome>
+    <quantidade>100 g</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>151</calorias>
+    <nome>Mistura de Vegetais Cozidos Milho, Ervilhas, Feijão Verde e Cenouras</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>67</calorias>
+    <nome>Mistura de Vegetais Milho, Feijão Verde, Ervilhas, Cenouras sem Sal, Enlatado</nome>
+    <quantidade>1 chávena</quantidade>
+  </vegetal>
+  <vegetal>
+    <calorias>123</calorias>
+    <nome>ola</nome>
+    <quantidade>2</quantidade>
+  </vegetal>
+</vegetais>

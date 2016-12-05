@@ -9,7 +9,7 @@ using System.Text;
 namespace RestaurantesWebservice
 {
     [ServiceContract]
-    public interface IServiceRestaurantes
+    public interface IServiceVegetais
     {
         // AUTHENTICATION
         [WebInvoke(Method = "POST", UriTemplate = "/signup?token={token}")]
@@ -35,61 +35,37 @@ namespace RestaurantesWebservice
         //-----------------------------------------------------------------------------------------------------------------------------------
         //-----------------------------------------------------------------------------------------------------------------------------------
         //-----------------------------------------------------------------------------------------------------------------------------------
-
-        // GET RESTAURANTES
+        // GET VEGETAIS
         [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "/restaurante?token={token}")]
-        List<Restaurantes> GetRestaurantes(string token);
+        [WebInvoke(Method = "GET", UriTemplate = "/vegetal?token={token}")]
+        List<Vegetais> GetVegetais(string token);
 
         // admin only
-        // ADD RESTAURANTES
+        // ADD VEGETAIS
         [OperationContract]
-        [WebInvoke(Method = "POST", UriTemplate = "/restaurante?token={token}")]
-        void AddRestaurante(Restaurantes restaurante, string token);
+        [WebInvoke(Method = "POST", UriTemplate = "/vegetal?token={token}")]
+        void AddVegetal(Vegetais vegetais, string token);
 
         // admin only
-        // DELETE RESTAURANTES
-        [OperationContract(Name = "DeleteRestauranteByTitle")]
-        [WebInvoke(Method = "DELETE", UriTemplate = "/restaurante/{restaurante}?token={token}")]
-        void DeleteRestaurante(string restaurante, string token); // admin only
+        // DELETE VEGETAIS
+        [OperationContract(Name = "DeleteVegetaisByTitle")]
+        [WebInvoke(Method = "DELETE", UriTemplate = "/vegetal/{vegetal}?token={token}")]
+        void DeleteVegetal(string vegetal, string token); // admin only
 
     }
 
     [DataContract]
-    public class Restaurantes
+    public class Vegetais
     {
-        private string restaurante;
-        private string item;
-        private string quantidade;
         private string calorias;
+        private string nome;
+        private string quantidade;
 
-        public Restaurantes(string restaurante, string item, string quantidade, string calorias)
+        public Vegetais(string calorias, string nome, string quantidade)
         {
-            this.restaurante = restaurante;
-            this.item = item;
-            this.quantidade = quantidade;
             this.calorias = calorias;
-        }
-
-        [DataMember]
-        public string Restaurante
-        {
-            get { return restaurante; }
-            set { restaurante = value; }
-        }
-
-        [DataMember]
-        public string Item
-        {
-            get { return item; }
-            set { item = value; }
-        }
-
-        [DataMember]
-        public string Quantidade
-        {
-            get { return quantidade; }
-            set { quantidade = value; }
+            this.nome = nome;
+            this.quantidade = quantidade;
         }
 
         [DataMember]
@@ -99,16 +75,66 @@ namespace RestaurantesWebservice
             set { calorias = value; }
         }
 
+        [DataMember]
+        public string Nome
+        {
+            get { return nome; }
+            set { nome = value; }
+
+        }
+
+        [DataMember]
+        public string Quantidade
+        {
+            get { return quantidade; }
+            set { quantidade = value; }
+        }
+
         public override string ToString()
         {
             string res = String.Empty;
-            res += "Restaurante: " + Restaurante + Environment.NewLine;
-            res += "Item: " + Item + Environment.NewLine;
-            res += "Quantidade: " + Quantidade + Environment.NewLine;
             res += "Calorias: " + Calorias + Environment.NewLine;
+            res += "Nome: " + Nome + Environment.NewLine;
+            res += "Quantidade: " + Quantidade + Environment.NewLine;
             return res;
         }
     }
 
+    [DataContract]
+    public class User
+    {
+        private string username;
+        private string password;
+        private bool admin;
+
+        public User(string username, string password, bool admin)
+        {
+            this.admin = admin;
+            this.username = username;
+            this.password = password;
+        }
+
+        [DataMember]
+        public bool Admin
+        {
+            get { return admin; }
+            set { admin = value; }
+        }
+
+        [DataMember]
+        public string Username
+        {
+            get { return username; }
+            set { username = value; }
+
+        }
+
+        [DataMember]
+        public string Password
+        {
+            get { return password; }
+            set { password = value; }
+        }
+    }
 }
 

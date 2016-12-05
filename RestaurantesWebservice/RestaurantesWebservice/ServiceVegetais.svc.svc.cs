@@ -16,7 +16,7 @@ namespace RestaurantesWebservice
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
 
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
-    public class ServiceRestaurantes : IServiceRestaurantes
+    public class ServiceVegetais : IServiceVegetais
     {
         //chave : username 
         //valor: objecto user propriamente dito
@@ -73,7 +73,7 @@ namespace RestaurantesWebservice
             }
         }
 
-        public ServiceRestaurantes()
+        public ServiceVegetais()
         {
             this.users = new Dictionary<string, User>();
             this.tokens = new Dictionary<string, Token>();
@@ -83,7 +83,7 @@ namespace RestaurantesWebservice
             users.Add("admin", new User("admin", "admin", true));
 
             //define a filepath do ficheiro bookstore.xml
-            FILEPATH = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data", "restaurantes.xml");
+            FILEPATH = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data", "vegetais.xml");
         }
 
         public void SignUp(User user, string token)
@@ -186,71 +186,6 @@ namespace RestaurantesWebservice
 
             // e devolvemos o ojbecto token(que tem o uid passado por parametro e nao so)
             return tokenObject;
-        }
-
-        public List<Restaurantes> GetRestaurantes(string token)
-        {
-            checkAuthentication(token, false);
-            XmlDocument doc = new XmlDocument();
-            doc.Load(FILEPATH);
-            List<Restaurantes> restaurante = new List<Restaurantes>();
-            XmlNodeList restaurantesNodes = doc.SelectNodes("/restaurantes/restaurante");
-            foreach (XmlNode restauranteNode in restaurantesNodes)
-            {
-                XmlNode restaurante_Node1 = restauranteNode.SelectSingleNode("restaurante");
-                XmlNode itemNode = restauranteNode.SelectSingleNode("item");
-                XmlNode quantidadeNode = restauranteNode.SelectSingleNode("quantidade");
-                XmlNode caloriasNode = restauranteNode.SelectSingleNode("calorias");
-                Restaurantes restaurantes = new Restaurantes(
-                restaurante_Node1.InnerText,
-                itemNode.InnerText,
-                quantidadeNode.InnerText,
-                caloriasNode.InnerText);
-                restaurante.Add(restaurantes);
-            }
-            return restaurante;
-        }
-
-        public void AddRestaurante(Restaurantes restaurante, string token)
-        {
-            checkAuthentication(token, true);
-            XmlDocument doc = new XmlDocument();
-            doc.Load(FILEPATH);
-            XmlNode restauranteNode = doc.SelectSingleNode("/restaurantes");
-            XmlElement restaurante_Node = doc.CreateElement("restaurante");
-
-            XmlElement restaurante_Node1 = doc.CreateElement("restaurante");
-            restaurante_Node1.InnerText = restaurante.Restaurante;
-            restaurante_Node.AppendChild(restaurante_Node1);
-
-            XmlElement itemNode = doc.CreateElement("item");
-            itemNode.InnerText = restaurante.Item;
-            restaurante_Node.AppendChild(itemNode);
-
-            XmlElement quantidadeNode = doc.CreateElement("quantidade");
-            quantidadeNode.InnerText = restaurante.Quantidade;
-            restaurante_Node.AppendChild(quantidadeNode);
-
-            XmlElement caloriasNode = doc.CreateElement("calorias");
-            caloriasNode.InnerText = restaurante.Calorias;
-            restaurante_Node.AppendChild(caloriasNode);
-
-            restauranteNode.AppendChild(restaurante_Node);
-            doc.Save(FILEPATH);
-        }
-
-        public void DeleteRestaurante(string restaurante, string token)
-        {
-            checkAuthentication(token, true);
-            XmlDocument doc = new XmlDocument();
-            doc.Load(FILEPATH);
-            XmlNode restauranteNode = doc.SelectSingleNode("/restaurantes");
-            XmlNode restaurantesNode = doc.SelectSingleNode("/restaurantes/restaurante[restaurante='" + restaurante + "']");
-            if (restaurantesNode != null)
-            {
-                restauranteNode.RemoveChild(restaurantesNode);
-                doc.Save(FILEPATH);
-            }
         }
 
         //------------------------------------------------------------------------------------------------------------------------------
