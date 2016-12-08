@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{28A1D947-D64B-4D81-88AB-064753111FE2}</ProjectGuid>
+    <ProjectGuid>{D3A50518-CA44-42BE-B944-E74F45876181}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RestaurantesWebservice</RootNamespace>
-    <AssemblyName>RestaurantesWebservice</AssemblyName>
+    <RootNamespace>Webservice</RootNamespace>
+    <AssemblyName>Webservice</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -92,25 +92,17 @@
     <Content Include="App_Data\json.xml" />
     <Content Include="App_Data\restaurantes.xml" />
     <Content Include="App_Data\vegetais.xml" />
-    <Content Include="ServiceExercicios.svc.svc" />
-    <Content Include="ServiceRestaurantes.svc.svc" />
-    <Content Include="ServiceVegetais.svc.svc" />
-    <Content Include="Web.config" />
+    <Content Include="Service1.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IServiceExercicios.cs.cs" />
-    <Compile Include="IServiceVegetais.cs.cs" />
-    <Compile Include="ServiceExercicios.svc.svc.cs">
-      <DependentUpon>ServiceExercicios.svc.svc</DependentUpon>
+    <Compile Include="Service1.svc.cs">
+      <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
-    <Compile Include="ServiceRestaurantes.svc.svc.cs">
-      <DependentUpon>ServiceRestaurantes.svc.svc</DependentUpon>
-    </Compile>
-    <Compile Include="IServiceRestaurantes.cs.cs" />
+    <Compile Include="IService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServiceVegetais.svc.svc.cs">
-      <DependentUpon>ServiceVegetais.svc.svc</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -138,9 +130,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>58196</DevelopmentServerPort>
+          <DevelopmentServerPort>50894</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:58196/</IISUrl>
+          <IISUrl>http://localhost:50894/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
