@@ -1,0 +1,11 @@
+D:\David_GIT\InterS\Webservice\WebserviceClientAdmin\bin\Debug\WebserviceClientAdmin.exe.config
+D:\David_GIT\InterS\Webservice\WebserviceClientAdmin\obj\Debug\WebserviceClientAdmin.FormLogin.resources
+D:\David_GIT\InterS\Webservice\WebserviceClientAdmin\obj\Debug\WebserviceClientAdmin.FormMain.resources
+D:\David_GIT\InterS\Webservice\WebserviceClientAdmin\obj\Debug\WebserviceClientAdmin.FormSignUp.resources
+D:\David_GIT\InterS\Webservice\WebserviceClientAdmin\obj\Debug\WebserviceClientAdmin.Properties.Resources.resources
+D:\David_GIT\InterS\Webservice\WebserviceClientAdmin\obj\Debug\WebserviceClientAdmin.csproj.GenerateResource.Cache
+D:\David_GIT\InterS\Webservice\WebserviceClientAdmin\bin\Debug\WebserviceClientAdmin.exe
+D:\David_GIT\InterS\Webservice\WebserviceClientAdmin\bin\Debug\WebserviceClientAdmin.pdb
+D:\David_GIT\InterS\Webservice\WebserviceClientAdmin\obj\Debug\WebserviceClientAdmin.exe
+D:\David_GIT\InterS\Webservice\WebserviceClientAdmin\obj\Debug\WebserviceClientAdmin.pdb
+D:\David_GIT\InterS\Webservice\WebserviceClientAdmin\obj\Debug\WebserviceClientAdmin.csprojResolveAssemblyReference.cache

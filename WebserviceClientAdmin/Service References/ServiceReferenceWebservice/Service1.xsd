@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Webservice" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Webservice" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="User">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Admin" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="tns:User" />
+  <xs:complexType name="ArrayOfExercicios">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Exercicios" nillable="true" type="tns:Exercicios" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExercicios" nillable="true" type="tns:ArrayOfExercicios" />
+  <xs:complexType name="Exercicios">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Calorias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Met" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Exercicios" nillable="true" type="tns:Exercicios" />
+  <xs:complexType name="ArrayOfRestaurantes">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Restaurantes" nillable="true" type="tns:Restaurantes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRestaurantes" nillable="true" type="tns:ArrayOfRestaurantes" />
+  <xs:complexType name="Restaurantes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Calorias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Item" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Quantidade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Restaurante" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Restaurantes" nillable="true" type="tns:Restaurantes" />
+  <xs:complexType name="ArrayOfVegetais">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Vegetais" nillable="true" type="tns:Vegetais" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVegetais" nillable="true" type="tns:ArrayOfVegetais" />
+  <xs:complexType name="Vegetais">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Calorias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Quantidade" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Vegetais" nillable="true" type="tns:Vegetais" />
+</xs:schema>
