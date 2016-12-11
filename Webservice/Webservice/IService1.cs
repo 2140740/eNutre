@@ -271,9 +271,9 @@ namespace Webservice
         public override string ToString()
         {
             string res = String.Empty;
-            res += "Calorias: " + Calorias + Environment.NewLine;
             res += "Nome: " + Nome + Environment.NewLine;
             res += "Quantidade: " + Quantidade + Environment.NewLine;
+            res += "Calorias: " + Calorias + Environment.NewLine;
             return res;
         }
     }

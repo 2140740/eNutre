@@ -20,8 +20,9 @@ namespace Webservice
         //valor: objecto token
         private Dictionary<string, Token> tokens;
 
-        private static string FILEPATH;
-
+        private static string FILEPATHExerc;
+        private static string FILEPATHrest;
+        private static string FILEPATHveg;
 
         private class Token
         {
@@ -77,7 +78,9 @@ namespace Webservice
             users.Add("admin", new User("admin", "admin", true));
 
             //define a filepath do ficheiro bookstore.xml
-            FILEPATH = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data", "");
+            FILEPATHExerc = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data", "json.xml");
+            FILEPATHrest = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data", "restaurantes.xml");
+            FILEPATHveg = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data", "vegetais.xml");
         }
 
 
@@ -189,7 +192,7 @@ namespace Webservice
         {
             checkAuthentication(token, false);
             XmlDocument doc = new XmlDocument();
-            doc.Load(FILEPATH);
+            doc.Load(FILEPATHExerc);
             List<Exercicios> exercicio = new List<Exercicios>();
             XmlNodeList exercicioNodes = doc.SelectNodes("/exercicios/exercicio");
             foreach (XmlNode exercicioNode in exercicioNodes)
@@ -210,7 +213,7 @@ namespace Webservice
         {
             checkAuthentication(token, true);
             XmlDocument doc = new XmlDocument();
-            doc.Load(FILEPATH);
+            doc.Load(FILEPATHExerc);
             XmlNode exercicioNode = doc.SelectSingleNode("/exercicios");
             XmlElement exercicio_Node = doc.CreateElement("exercicio");
 
@@ -227,20 +230,20 @@ namespace Webservice
             exercicio_Node.AppendChild(exerciciometNode);
 
             exercicioNode.AppendChild(exercicio_Node);
-            doc.Save(FILEPATH);
+            doc.Save(FILEPATHExerc);
         }
 
         public void DeleteExercicio(string exercicio, string token)
         {
             checkAuthentication(token, true);
             XmlDocument doc = new XmlDocument();
-            doc.Load(FILEPATH);
+            doc.Load(FILEPATHExerc);
             XmlNode exercicioNode = doc.SelectSingleNode("/exercicios");
             XmlNode exerciciosNode = doc.SelectSingleNode("/exercicios/exercicio[nome='" + exercicio + "']");
             if (exerciciosNode != null)
             {
                 exercicioNode.RemoveChild(exerciciosNode);
-                doc.Save(FILEPATH);
+                doc.Save(FILEPATHExerc);
             }
         }
 
@@ -250,7 +253,7 @@ namespace Webservice
         {
             checkAuthentication(token, false);
             XmlDocument doc = new XmlDocument();
-            doc.Load(FILEPATH);
+            doc.Load(FILEPATHrest);
             List<Restaurantes> restaurante = new List<Restaurantes>();
             XmlNodeList restaurantesNodes = doc.SelectNodes("/restaurantes/restaurante");
             foreach (XmlNode restauranteNode in restaurantesNodes)
@@ -273,7 +276,7 @@ namespace Webservice
         {
             checkAuthentication(token, true);
             XmlDocument doc = new XmlDocument();
-            doc.Load(FILEPATH);
+            doc.Load(FILEPATHrest);
             XmlNode restauranteNode = doc.SelectSingleNode("/restaurantes");
             XmlElement restaurante_Node = doc.CreateElement("restaurante");
 
@@ -294,20 +297,20 @@ namespace Webservice
             restaurante_Node.AppendChild(caloriasNode);
 
             restauranteNode.AppendChild(restaurante_Node);
-            doc.Save(FILEPATH);
+            doc.Save(FILEPATHrest);
         }
 
         public void DeleteRestaurante(string restaurante, string token)
         {
             checkAuthentication(token, true);
             XmlDocument doc = new XmlDocument();
-            doc.Load(FILEPATH);
+            doc.Load(FILEPATHrest);
             XmlNode restauranteNode = doc.SelectSingleNode("/restaurantes");
             XmlNode restaurantesNode = doc.SelectSingleNode("/restaurantes/restaurante[restaurante='" + restaurante + "']");
             if (restaurantesNode != null)
             {
                 restauranteNode.RemoveChild(restaurantesNode);
-                doc.Save(FILEPATH);
+                doc.Save(FILEPATHrest);
             }
         }
 
@@ -317,7 +320,7 @@ namespace Webservice
         {
             checkAuthentication(token, false);
             XmlDocument doc = new XmlDocument();
-            doc.Load(FILEPATH);
+            doc.Load(FILEPATHveg);
             List<Vegetais> vegetal = new List<Vegetais>();
             XmlNodeList vegetaisNodes = doc.SelectNodes("/vegetais/vegetal");
             foreach (XmlNode vegetalNode in vegetaisNodes)
@@ -338,7 +341,7 @@ namespace Webservice
         {
             checkAuthentication(token, true);
             XmlDocument doc = new XmlDocument();
-            doc.Load(FILEPATH);
+            doc.Load(FILEPATHveg);
             XmlNode vegetalNode = doc.SelectSingleNode("/vegetais");
             XmlElement vegetal_Node = doc.CreateElement("vegetal");
 
@@ -355,20 +358,20 @@ namespace Webservice
             vegetal_Node.AppendChild(vegetalquantidadeNode);
 
             vegetalNode.AppendChild(vegetal_Node);
-            doc.Save(FILEPATH);
+            doc.Save(FILEPATHveg);
         }
 
         public void DeleteVegetal(string vegetal, string token)
         {
             checkAuthentication(token, true);
             XmlDocument doc = new XmlDocument();
-            doc.Load(FILEPATH);
+            doc.Load(FILEPATHveg);
             XmlNode restauranteNode = doc.SelectSingleNode("/vegetais");
             XmlNode restaurantesNode = doc.SelectSingleNode("/vegetais/vegetal[nome='" + vegetal + "']");
             if (restaurantesNode != null)
             {
                 restauranteNode.RemoveChild(restaurantesNode);
-                doc.Save(FILEPATH);
+                doc.Save(FILEPATHveg);
             }
         }
     }
