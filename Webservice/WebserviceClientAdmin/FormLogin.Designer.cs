@@ -56,6 +56,7 @@
             // 
             // textBoxUsername
             // 
+            this.textBoxUsername.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.textBoxUsername.Location = new System.Drawing.Point(76, 6);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(196, 20);
@@ -63,6 +64,7 @@
             // 
             // textBoxPassword
             // 
+            this.textBoxPassword.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.textBoxPassword.Location = new System.Drawing.Point(76, 34);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(196, 20);
@@ -98,6 +100,8 @@
             this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormLogin";
             this.Text = "FormLogin";
             this.ResumeLayout(false);

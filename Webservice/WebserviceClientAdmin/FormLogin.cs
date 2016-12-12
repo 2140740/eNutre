@@ -21,7 +21,7 @@ namespace WebserviceClientAdmin
         public FormLogin(Service1Client client)
         {
             InitializeComponent();
-            this.client = client;
+            this.client = client;            textBoxPassword.PasswordChar = '·';
         }
 
         private void buttonOK_Click(object sender, EventArgs e)
