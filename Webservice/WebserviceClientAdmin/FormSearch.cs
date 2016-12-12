@@ -43,7 +43,7 @@ namespace WebserviceClientAdmin
             textBoxOutput.Text = "";
 
             //para converter o primeiro caracter para maiuscula
-            textBoxSearch.Text = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(textBoxSearch.Text);
+            
 
             if (textBoxSearch.Text == "" || comboBoxresource.SelectedItem == null)
             {
@@ -51,69 +51,38 @@ namespace WebserviceClientAdmin
             }
             else if(comboBoxresource.SelectedItem=="Vegetais")
             {
-                Vegetais[] vegetais = client.GetVegetais(token);
-                foreach (Vegetais v in vegetais)
-                {
-                    textBoxOutput.Text += printBookVeg(v);
-                }
+                textBoxSearch.Text = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(textBoxSearch.Text);
+
+                Vegetais vegetal = client.GetVegetaisByNome(textBoxSearch.Text, token);
+
+                textBoxOutput.Text = "Nome: " + vegetal.Nome + Environment.NewLine 
+                    + "Calorias: " +vegetal.Calorias + Environment.NewLine 
+                    + "Quantidade: " + vegetal.Quantidade;
+
             }
             else if (comboBoxresource.SelectedItem == "Restaurantes")
             {
-                Restaurantes[] restaurantes = client.GetRestaurantes(token);
-                foreach (Restaurantes r in restaurantes)
-                {
-                    textBoxOutput.Text += printBookRest(r);
-                }
+                
+                Restaurantes restaurante = client.GetRestaurantesByNome(textBoxSearch.Text, token);
+
+                textBoxOutput.Text = "Nome: " + restaurante.Restaurante + Environment.NewLine
+                    + "Item: " + restaurante.Item + Environment.NewLine
+                    + "Quantidade: " + restaurante.Quantidade + Environment.NewLine
+                    + "Calorias: " + restaurante.Calorias;
+                    
             }
 
              else if (comboBoxresource.SelectedItem == "Exercícios")
             {
-                Exercicios[] exercicios = client.GetExercicio(token);
-                foreach (Exercicios ex in exercicios)
-                {
-                    textBoxOutput.Text += printBookExer(ex);
-                }
+                textBoxSearch.Text = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(textBoxSearch.Text);
+
+                Exercicios exercicio = client.GetExerciciosByNome(textBoxSearch.Text, token);
+
+                textBoxOutput.Text = "Nome: " + exercicio.Nome + Environment.NewLine
+                    + "Calorias: " + exercicio.Calorias + Environment.NewLine
+                    + "Met: " + exercicio.Met;
             }
         }
 
-        private string printBookVeg(Vegetais vegetais)
-        {
-            if (vegetais.Nome.Contains(textBoxSearch.Text))
-            {
-                return "Nome: " + vegetais.Nome + Environment.NewLine
-                       + "Quantidade: " + vegetais.Quantidade + Environment.NewLine
-                       + "Calorias: " + vegetais.Calorias + Environment.NewLine + Environment.NewLine;
-            }
-            else
-            {
-                return null;
-            }
-        }        private string printBookRest(Restaurantes restaurantes)
-        {
-            if (restaurantes.Restaurante.Contains(textBoxSearch.Text))
-            {
-                return "Nome: " + restaurantes.Restaurante + Environment.NewLine
-                       + "Item: " + restaurantes.Item + Environment.NewLine
-                       + "Quantidade" + restaurantes.Quantidade + Environment.NewLine
-                       +"Calorias: " + restaurantes.Calorias + Environment.NewLine + Environment.NewLine;
-
-            }
-            else
-            {
-                return null;
-            }
-        }        private string printBookExer(Exercicios exercicios)
-        {
-            if (exercicios.Nome.Contains(textBoxSearch.Text))
-            {
-                return "Nome: " + exercicios.Nome + Environment.NewLine
-                       + "Calorias: " + exercicios.Calorias + Environment.NewLine
-                       + "Met: " + exercicios.Met + Environment.NewLine + Environment.NewLine;
-            }
-            else
-            {
-                return null;
-            }
-        }
     }
 }

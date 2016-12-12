@@ -93,8 +93,8 @@ namespace ExcelCode
         public static void createNode(string restaurante, string item, string quantidade, string calorias,
             XmlTextWriter writer)
         {
-            writer.WriteStartElement("restaurantes");
             writer.WriteStartElement("restaurante");
+            writer.WriteStartElement("nome");
             writer.WriteString(restaurante);
             writer.WriteEndElement();
             writer.WriteStartElement("item");

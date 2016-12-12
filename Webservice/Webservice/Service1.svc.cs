@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.ServiceModel;
 using System.IO;
 using System.Linq;
@@ -247,6 +248,27 @@ namespace Webservice
             }
         }
 
+        public Exercicios GetExerciciosByName(string nome, string token)
+        {
+            checkAuthentication(token, false);
+            XmlDocument doc = new XmlDocument();
+            doc.Load(FILEPATHExerc);
+            XmlNode nomeNode = doc.SelectSingleNode("/exercicios/exercicio[nome='" + nome + "']/nome");
+            if (nomeNode == null)
+            {
+                return null;
+            }
+            XmlNode caloriasNode = doc.SelectSingleNode("/exercicios/exercicio[nome='" + nome + "']/calorias");
+            XmlNode metNode = doc.SelectSingleNode("/exercicios/exercicio[nome='" + nome + "']/met");
+
+            Exercicios exercicio = new Exercicios(
+            nomeNode.InnerText,
+            caloriasNode.InnerText,
+            metNode.InnerText);
+
+            return exercicio;
+        }
+
         //-----------------------------------------RESTAURANTES-----------------------------------------------------------------
 
         public List<Restaurantes> GetRestaurantes(string token)
@@ -258,7 +280,7 @@ namespace Webservice
             XmlNodeList restaurantesNodes = doc.SelectNodes("/restaurantes/restaurante");
             foreach (XmlNode restauranteNode in restaurantesNodes)
             {
-                XmlNode restaurante_Node1 = restauranteNode.SelectSingleNode("restaurante");
+                XmlNode restaurante_Node1 = restauranteNode.SelectSingleNode("nome");
                 XmlNode itemNode = restauranteNode.SelectSingleNode("item");
                 XmlNode quantidadeNode = restauranteNode.SelectSingleNode("quantidade");
                 XmlNode caloriasNode = restauranteNode.SelectSingleNode("calorias");
@@ -313,6 +335,30 @@ namespace Webservice
                 doc.Save(FILEPATHrest);
             }
         }
+        
+        public Restaurantes GetRestaurantesByName(string nome, string token)
+        {
+            checkAuthentication(token, false);
+            XmlDocument doc = new XmlDocument();
+            doc.Load(FILEPATHrest);
+            XmlNode nomeNode = doc.SelectSingleNode("/restaurantes/restaurante[nome='" + nome + "']/nome");
+            if (nomeNode == null)
+            {
+                return null;
+            }
+            XmlNode itemNode = doc.SelectSingleNode("/restaurantes/restaurante[nome='" + nome + "']/item");
+            XmlNode quantidadeNode = doc.SelectSingleNode("/restaurantes/restaurante[nome='" + nome + "']/quantidade");
+            XmlNode caloriasNode = doc.SelectSingleNode("/restaurantes/restaurante[nome='" + nome + "']/calorias");
+
+            Restaurantes restaurante = new Restaurantes(
+            nomeNode.InnerText,
+            itemNode.InnerText,
+            quantidadeNode.InnerText,
+            caloriasNode.InnerText);
+            
+            return restaurante;
+        }
+        
 
         //---------------------------------------VEGETAIS--------------------------------------------------------
 
@@ -374,5 +420,28 @@ namespace Webservice
                 doc.Save(FILEPATHveg);
             }
         }
+
+        public Vegetais GetVegetaisByName(string nome, string token)
+        {
+            checkAuthentication(token, false);
+            XmlDocument doc = new XmlDocument();
+            doc.Load(FILEPATHveg);
+            XmlNode nomeNode = doc.SelectSingleNode("/vegetais/vegetal[nome='" + nome + "']/calorias");
+            if (nomeNode == null)
+            {
+                return null;
+            }
+            XmlNode caloriasNode = doc.SelectSingleNode("/vegetais/vegetal[nome='" + nome + "']/nome");
+            XmlNode quantidadeNode = doc.SelectSingleNode("/vegetais/vegetal[nome='" + nome + "']/quantidade");
+
+            Vegetais vegetal = new Vegetais(
+            nomeNode.InnerText,
+            caloriasNode.InnerText,
+            quantidadeNode.InnerText);
+
+            return vegetal;
+        }
+
     }
 }
+

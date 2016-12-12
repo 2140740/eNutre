@@ -1,745 +1,745 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <restaurantes>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>Hambúrguer bem Passado</item>
     <quantidade>1 dose (200g)</quantidade>
     <calorias>304 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>Limonada sem Açúcar</item>
     <quantidade>1 dose</quantidade>
     <calorias>10 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>H3 Arroz</item>
     <quantidade>1/2 dose</quantidade>
     <calorias>195 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>Batatas Fritas (1/2 dose)</item>
     <quantidade>1/2 dose</quantidade>
     <calorias>274 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>H3 Esparregado</item>
     <quantidade>1 dose</quantidade>
     <calorias>116 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>Hambúrguer Médio</item>
     <quantidade>1 dose (200g)</quantidade>
     <calorias>354 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>Batatas Fritas</item>
     <quantidade>1 dose (75g)</quantidade>
     <calorias>411 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>H3 Arroz (1/2 dose)</item>
     <quantidade>1 dose</quantidade>
     <calorias>390 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>Limonada de Morango sem Açúcar</item>
     <quantidade>1 dose</quantidade>
     <calorias>14 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>H3 Grelado</item>
     <quantidade>1 hambúrguer (200g)</quantidade>
     <calorias>304 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>H3 Mediterrãneo</item>
     <quantidade>1 hambúrguer (180g)</quantidade>
     <calorias>441 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>H3 Cheese</item>
     <quantidade>1 hambúrguer (180g)</quantidade>
     <calorias>464 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>H3 Champignon</item>
     <quantidade>1 hambúrguer (200g)</quantidade>
     <calorias>421 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>Tuga</item>
     <quantidade>1 hambúrguer (180g)</quantidade>
     <calorias>424 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>H3 Benedict</item>
     <quantidade>1 hambúrguer (100g)</quantidade>
     <calorias>553 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>H3 Tuga</item>
     <quantidade>1 dose (180g)</quantidade>
     <calorias>424 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>H3 Legumes</item>
     <quantidade>1 hambúrguer</quantidade>
     <calorias>460 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>Super Bread</item>
     <quantidade>1 hambúrguer (380g)</quantidade>
     <calorias>836 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>H3 Carbonara</item>
     <quantidade>1 dose</quantidade>
     <calorias>546 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>h3</restaurante>
+    <nome>h3</nome>
     <item>Vinagreta Dijon</item>
     <quantidade>1 dose</quantidade>
     <calorias>83 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>Batatas Fritas (Média)</item>
     <quantidade>1 dose (100g)</quantidade>
     <calorias>340 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>Big Mac</item>
     <quantidade>1 dose</quantidade>
     <calorias>510 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>Batatas Fritas (Pequena)</item>
     <quantidade>1 dose</quantidade>
     <calorias>240 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>Double Cheeseburguer</item>
     <quantidade>1 dose</quantidade>
     <calorias>448 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>Cheeseburger</item>
     <quantidade>1 dose (120g)</quantidade>
     <calorias>305 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>Chicken McNuggets (4)</item>
     <quantidade>1 dose</quantidade>
     <calorias>179 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>Batatas Fritas (Grande)</item>
     <quantidade>1 dose</quantidade>
     <calorias>448 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>McFlurry Snickers</item>
     <quantidade>1 dose (187g)</quantidade>
     <calorias>375 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>Big Tasty</item>
     <quantidade>1 dose (345g)</quantidade>
     <calorias>842 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>CBO</item>
     <quantidade>1 dose (247g)</quantidade>
     <calorias>665 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>Coca-Cola (Média)</item>
     <quantidade>1 dose (400ml)</quantidade>
     <calorias>176 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>Sopa de Grão com Espinafres</item>
     <quantidade>1 dose (150ml)</quantidade>
     <calorias>75 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>Sundae de Caramelo</item>
     <quantidade>1 dose (184g)</quantidade>
     <calorias>325 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>Ketchup para Batatas</item>
     <quantidade>1 dose (12g)</quantidade>
     <calorias>12 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>Wrap Ranch</item>
     <quantidade>1 dose (119g)</quantidade>
     <calorias>315 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>McChicken</item>
     <quantidade>1 dose (184g)</quantidade>
     <calorias>410 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>McFlurry Oreo</item>
     <quantidade>1 dose (218g)</quantidade>
     <calorias>345 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>Molho para Batatas</item>
     <quantidade>1 dose (25ml)</quantidade>
     <calorias>46 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>Coca-Cola Zero (Pequena)</item>
     <quantidade>1 dose (250ml)</quantidade>
     <calorias>1 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>mcdonalds</restaurante>
+    <nome>mcdonalds</nome>
     <item>Croissant Fiambre</item>
     <quantidade>1 dose</quantidade>
     <calorias>178 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-king</restaurante>
+    <nome>burger-king</nome>
     <item>Whopper</item>
     <quantidade>1 dose (273g)</quantidade>
     <calorias>633 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-king</restaurante>
+    <nome>burger-king</nome>
     <item>Double Cheese Bacon XXL</item>
     <quantidade>1 dose (182g)</quantidade>
     <calorias>509 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-king</restaurante>
+    <nome>burger-king</nome>
     <item>Big King</item>
     <quantidade>1 dose (163g)</quantidade>
     <calorias>411 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-king</restaurante>
+    <nome>burger-king</nome>
     <item>Crispy Chicken</item>
     <quantidade>1 dose (177g)</quantidade>
     <calorias>503 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-king</restaurante>
+    <nome>burger-king</nome>
     <item>BK Fusions Oreo Ice Cream</item>
     <quantidade>1 dose (170g)</quantidade>
     <calorias>326 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-king</restaurante>
+    <nome>burger-king</nome>
     <item>Steakhouse</item>
     <quantidade>1 dose</quantidade>
     <calorias>950 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-king</restaurante>
+    <nome>burger-king</nome>
     <item>Ketchup Sachet</item>
     <quantidade>1 dose (10g)</quantidade>
     <calorias>10 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-king</restaurante>
+    <nome>burger-king</nome>
     <item>Long Chicken</item>
     <quantidade>1 dose (222g)</quantidade>
     <calorias>624 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-king</restaurante>
+    <nome>burger-king</nome>
     <item>Veggie Bean Burger</item>
     <quantidade>1 dose (255g)</quantidade>
     <calorias>604 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-king</restaurante>
+    <nome>burger-king</nome>
     <item>Hot Brownie with Ice Cream</item>
     <quantidade>1 dose (120g)</quantidade>
     <calorias>422 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-king</restaurante>
+    <nome>burger-king</nome>
     <item>Triple Whopper</item>
     <quantidade>1 dose (435g)</quantidade>
     <calorias>1156 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-ranch</restaurante>
+    <nome>burger-ranch</nome>
     <item>Batatas Fritas (Pequena)</item>
     <quantidade>1 dose (90g)</quantidade>
     <calorias>150 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-ranch</restaurante>
+    <nome>burger-ranch</nome>
     <item>Tosta Mista</item>
     <quantidade>1 dose</quantidade>
     <calorias>285 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-ranch</restaurante>
+    <nome>burger-ranch</nome>
     <item>Hamburguer Ranch</item>
     <quantidade>1 dose</quantidade>
     <calorias>557 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-ranch</restaurante>
+    <nome>burger-ranch</nome>
     <item>Tosta Queijo</item>
     <quantidade>1 dose</quantidade>
     <calorias>215 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-ranch</restaurante>
+    <nome>burger-ranch</nome>
     <item>Hamburguer Clássico</item>
     <quantidade>1 dose</quantidade>
     <calorias>320 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-ranch</restaurante>
+    <nome>burger-ranch</nome>
     <item>Cachorro</item>
     <quantidade>1 dose</quantidade>
     <calorias>525 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-ranch</restaurante>
+    <nome>burger-ranch</nome>
     <item>Hamburguer Peixe</item>
     <quantidade>1 dose</quantidade>
     <calorias>389 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-ranch</restaurante>
+    <nome>burger-ranch</nome>
     <item>Hamburguer Vegetariano</item>
     <quantidade>1 dose</quantidade>
     <calorias>413 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>burger-ranch</restaurante>
+    <nome>burger-ranch</nome>
     <item>Tosta Fiambre</item>
     <quantidade>1 dose</quantidade>
     <calorias>223 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>kfc</restaurante>
+    <nome>kfc</nome>
     <item>Pedaço de Frango</item>
     <quantidade>1 pedaço (93g)</quantidade>
     <calorias>197 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>kfc</restaurante>
+    <nome>kfc</nome>
     <item>Hot Wings</item>
     <quantidade>2 hot wings (70g)</quantidade>
     <calorias>188 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>kfc</restaurante>
+    <nome>kfc</nome>
     <item>Brazer</item>
     <quantidade>1 sanduíche (273g)</quantidade>
     <calorias>526 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>kfc</restaurante>
+    <nome>kfc</nome>
     <item>Tower</item>
     <quantidade>1 dose (258g)</quantidade>
     <calorias>639 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>kfc</restaurante>
+    <nome>kfc</nome>
     <item>Twister</item>
     <quantidade>1 dose (209g)</quantidade>
     <calorias>510 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>kfc</restaurante>
+    <nome>kfc</nome>
     <item>Daddy Burger</item>
     <quantidade>1 unidade (273g)</quantidade>
     <calorias>615 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>noori</restaurante>
+    <nome>noori</nome>
     <item>Box Salmão</item>
     <quantidade>1 box (2 unidades)</quantidade>
     <calorias>167 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>noori</restaurante>
+    <nome>noori</nome>
     <item>Spicy Tuna</item>
     <quantidade>1 dose (150g)</quantidade>
     <calorias>176 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>pans-amp-company</restaurante>
+    <nome>pans-amp-company</nome>
     <item>Pasta de Atum</item>
     <quantidade>1 sandes (260g)</quantidade>
     <calorias>779 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>pans-amp-company</restaurante>
+    <nome>pans-amp-company</nome>
     <item>Sandes Supremo de Frango</item>
     <quantidade>1 sandes (247g)</quantidade>
     <calorias>640 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>pans-amp-company</restaurante>
+    <nome>pans-amp-company</nome>
     <item>Sandes Multicereais Queijo Fresco</item>
     <quantidade>1 sandes (275g)</quantidade>
     <calorias>375 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>pans-amp-company</restaurante>
+    <nome>pans-amp-company</nome>
     <item>Frango</item>
     <quantidade>1 baguette (223g)</quantidade>
     <calorias>469 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>pans-amp-company</restaurante>
+    <nome>pans-amp-company</nome>
     <item>Provençal</item>
     <quantidade>1 sandes (233g)</quantidade>
     <calorias>531 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>pizza-hut</restaurante>
+    <nome>pizza-hut</nome>
     <item>Cheeseham</item>
     <quantidade>1 fatia (130g)</quantidade>
     <calorias>342 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>pizza-hut</restaurante>
+    <nome>pizza-hut</nome>
     <item>Pão de Alho Supremo</item>
     <quantidade>2 fatias (103g)</quantidade>
     <calorias>310 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>pizza-hut</restaurante>
+    <nome>pizza-hut</nome>
     <item>Calzone Gamberi</item>
     <quantidade>1 dose (444g)</quantidade>
     <calorias>497 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>pizza-hut</restaurante>
+    <nome>pizza-hut</nome>
     <item>Mousse de Chocolate</item>
     <quantidade>1 mousse (70g)</quantidade>
     <calorias>286 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>starbucks</restaurante>
+    <nome>starbucks</nome>
     <item>Salada de Frutas</item>
     <quantidade>100g</quantidade>
     <calorias>53 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>starbucks</restaurante>
+    <nome>starbucks</nome>
     <item>Frappuccino de Caramelo (Tall)</item>
     <quantidade>1 dose (354ml)</quantidade>
     <calorias>250 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>starbucks</restaurante>
+    <nome>starbucks</nome>
     <item>Café Latte (Tall)</item>
     <quantidade>1 dose (250ml)</quantidade>
     <calorias>100 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>starbucks</restaurante>
+    <nome>starbucks</nome>
     <item>Caramel Macchiato (Grande)</item>
     <quantidade>1 dose (473ml)</quantidade>
     <calorias>239 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>starbucks</restaurante>
+    <nome>starbucks</nome>
     <item>Chocolate Mocha Flavour</item>
     <quantidade>100ml</quantidade>
     <calorias>63 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>starbucks</restaurante>
+    <nome>starbucks</nome>
     <item>Muffin de Mirtilos</item>
     <quantidade>1 muffin (135g)</quantidade>
     <calorias>470 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>starbucks</restaurante>
+    <nome>starbucks</nome>
     <item>Cinnamon Roll</item>
     <quantidade>1 rolo (118g)</quantidade>
     <calorias>420 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>starbucks</restaurante>
+    <nome>starbucks</nome>
     <item>Chocolate Chunk Cookie</item>
     <quantidade>1 dose (84g)</quantidade>
     <calorias>380 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>starbucks</restaurante>
+    <nome>starbucks</nome>
     <item>Seattle Latte</item>
     <quantidade>100ml</quantidade>
     <calorias>70 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>starbucks</restaurante>
+    <nome>starbucks</nome>
     <item>Vanilla Macchiato (Tall)</item>
     <quantidade>1 dose (350ml)</quantidade>
     <calorias>185 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>subway</restaurante>
+    <nome>subway</nome>
     <item>15 cm Frango Teriyaki</item>
     <quantidade>1 dose (279g)</quantidade>
     <calorias>384 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>subway</restaurante>
+    <nome>subway</nome>
     <item>15 cm Atum</item>
     <quantidade>1 dose</quantidade>
     <calorias>414 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>subway</restaurante>
+    <nome>subway</nome>
     <item>Cookie com Gotas de Chocolate</item>
     <quantidade>1 dose (33g)</quantidade>
     <calorias>210 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>subway</restaurante>
+    <nome>subway</nome>
     <item>15 cm Subway Melt</item>
     <quantidade>1 dose (254g)</quantidade>
     <calorias>380 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>subway</restaurante>
+    <nome>subway</nome>
     <item>15 cm Frango</item>
     <quantidade>1 dose (241g)</quantidade>
     <calorias>315 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>subway</restaurante>
+    <nome>subway</nome>
     <item>15 cm Peito de Peru</item>
     <quantidade>1 dose</quantidade>
     <calorias>307 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>subway</restaurante>
+    <nome>subway</nome>
     <item>15 cm BMT Italiano</item>
     <quantidade>1 dose (242g)</quantidade>
     <calorias>450 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>subway</restaurante>
+    <nome>subway</nome>
     <item>15cm Subway Club</item>
     <quantidade>1 dose (275g)</quantidade>
     <calorias>350 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Pizza Carbonara</item>
     <quantidade>1 fatia (76g)</quantidade>
     <calorias>235 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Pastel de Nata</item>
     <quantidade>100g</quantidade>
     <calorias>302 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Pizza Funny Bacon</item>
     <quantidade>1 fatia (75g)</quantidade>
     <calorias>207 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Pizza Especial da Casa</item>
     <quantidade>1 fatia (76g)</quantidade>
     <calorias>235 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Pasta Carbonara</item>
     <quantidade>100g</quantidade>
     <calorias>205 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Pizza Barbecue</item>
     <quantidade>1 fatia (84g)</quantidade>
     <calorias>240 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Pizza Atlãntica</item>
     <quantidade>1 fatia (71g)</quantidade>
     <calorias>196 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Pão de Alho Queijo</item>
     <quantidade>2 unidades</quantidade>
     <calorias>367 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Pizza Cool Cheese</item>
     <quantidade>1 fatia (76g)</quantidade>
     <calorias>204 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Pão de Alho com Queijo e Pepperoni</item>
     <quantidade>2 unidades</quantidade>
     <calorias>402 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Pizza Burguer</item>
     <quantidade>1 fatia (80g)</quantidade>
     <calorias>192 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Pão de Alho com Queijo e Azeitonas</item>
     <quantidade>2 unidades</quantidade>
     <calorias>353 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Profiteroles</item>
     <quantidade>100g</quantidade>
     <calorias>381 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Pizza Lasanha de Carne</item>
     <quantidade>1 fatia (80g)</quantidade>
     <calorias>226 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Enrolado Barbecue</item>
     <quantidade>1 dose (247g)</quantidade>
     <calorias>538 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Pizza Bacana</item>
     <quantidade>100g</quantidade>
     <calorias>270 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Top Burguer Vaca</item>
     <quantidade>100g</quantidade>
     <calorias>236 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Pizza Formaggio</item>
     <quantidade>1 fatia (76g)</quantidade>
     <calorias>237 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Enrolado Carbonara</item>
     <quantidade>1 dose (182g)</quantidade>
     <calorias>490 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>telepizza</restaurante>
+    <nome>telepizza</nome>
     <item>Telekebab</item>
     <quantidade>100g</quantidade>
     <calorias>225 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>vitaminas</restaurante>
+    <nome>vitaminas</nome>
     <item>Molho de Iogurte</item>
     <quantidade>1/2 concha de sopa (150ml)</quantidade>
     <calorias>217 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>vitaminas</restaurante>
+    <nome>vitaminas</nome>
     <item>Salada Havaiana</item>
     <quantidade>1 salada (500g)</quantidade>
     <calorias>614 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>wok-to-walk</restaurante>
+    <nome>wok-to-walk</nome>
     <item>Legumes Mistos</item>
     <quantidade>1 dose (200g)</quantidade>
     <calorias>190 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>wok-to-walk</restaurante>
+    <nome>wok-to-walk</nome>
     <item>Peito de Frango</item>
     <quantidade>1 dose (90g)</quantidade>
     <calorias>136 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>wok-to-walk</restaurante>
+    <nome>wok-to-walk</nome>
     <item>Noodles Integrais</item>
     <quantidade>1 dose (180g)</quantidade>
     <calorias>486 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>wok-to-walk</restaurante>
+    <nome>wok-to-walk</nome>
     <item>Ananás</item>
     <quantidade>1 dose (55g)</quantidade>
     <calorias>26 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>wok-to-walk</restaurante>
+    <nome>wok-to-walk</nome>
     <item>Molho de Soja Light</item>
     <quantidade>1 dose (75g)</quantidade>
     <calorias>40 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>wok-to-walk</restaurante>
+    <nome>wok-to-walk</nome>
     <item>Molho Saigon</item>
     <quantidade>1 dose (75g)</quantidade>
     <calorias>91 kcal</calorias>
   </restaurante>
   <restaurante>
-    <restaurante>wok-to-walk</restaurante>
+    <nome>wok-to-walk</nome>
     <item>Molho Tokyo</item>
     <quantidade>1 dose (75g)</quantidade>
     <calorias>141 kcal</calorias>

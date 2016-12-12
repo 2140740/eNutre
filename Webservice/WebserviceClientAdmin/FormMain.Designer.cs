@@ -162,19 +162,19 @@
             // vegetaisToolStripMenuItem1
             // 
             this.vegetaisToolStripMenuItem1.Name = "vegetaisToolStripMenuItem1";
-            this.vegetaisToolStripMenuItem1.Size = new System.Drawing.Size(141, 22);
+            this.vegetaisToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.vegetaisToolStripMenuItem1.Text = "Vegetais";
             // 
             // restaurantesToolStripMenuItem1
             // 
             this.restaurantesToolStripMenuItem1.Name = "restaurantesToolStripMenuItem1";
-            this.restaurantesToolStripMenuItem1.Size = new System.Drawing.Size(141, 22);
+            this.restaurantesToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.restaurantesToolStripMenuItem1.Text = "Restaurantes";
             // 
             // exercíciosToolStripMenuItem1
             // 
             this.exercíciosToolStripMenuItem1.Name = "exercíciosToolStripMenuItem1";
-            this.exercíciosToolStripMenuItem1.Size = new System.Drawing.Size(141, 22);
+            this.exercíciosToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.exercíciosToolStripMenuItem1.Text = "Exercícios";
             // 
             // deleteToolStripMenuItem

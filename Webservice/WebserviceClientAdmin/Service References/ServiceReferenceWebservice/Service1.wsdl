@@ -43,6 +43,12 @@
   <wsdl:message name="IService1_GetExercicio_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetExercicioResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_GetExerciciosByNome_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExerciciosByNome" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetExerciciosByNome_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExerciciosByNomeResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_AddExercicio_InputMessage">
     <wsdl:part name="parameters" element="tns:AddExercicio" />
   </wsdl:message>
@@ -61,6 +67,12 @@
   <wsdl:message name="IService1_GetRestaurantes_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetRestaurantesResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_GetRestaurantesByNome_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurantesByNome" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRestaurantesByNome_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurantesByNomeResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_AddRestaurante_InputMessage">
     <wsdl:part name="parameters" element="tns:AddRestaurante" />
   </wsdl:message>
@@ -78,6 +90,12 @@
   </wsdl:message>
   <wsdl:message name="IService1_GetVegetais_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetVegetaisResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetVegetaisByNome_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVegetaisByNome" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetVegetaisByNome_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVegetaisByNomeResponse" />
   </wsdl:message>
   <wsdl:message name="IService1_AddVegetal_InputMessage">
     <wsdl:part name="parameters" element="tns:AddVegetal" />
@@ -116,6 +134,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetExercicio" message="tns:IService1_GetExercicio_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetExercicioResponse" message="tns:IService1_GetExercicio_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="GetExerciciosByNome">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetExerciciosByNome" message="tns:IService1_GetExerciciosByNome_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetExerciciosByNomeResponse" message="tns:IService1_GetExerciciosByNome_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="AddExercicio">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddExercicio" message="tns:IService1_AddExercicio_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddExercicioResponse" message="tns:IService1_AddExercicio_OutputMessage" />
@@ -128,6 +150,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetRestaurantes" message="tns:IService1_GetRestaurantes_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetRestaurantesResponse" message="tns:IService1_GetRestaurantes_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="GetRestaurantesByNome">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetRestaurantesByNome" message="tns:IService1_GetRestaurantesByNome_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetRestaurantesByNomeResponse" message="tns:IService1_GetRestaurantesByNome_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="AddRestaurante">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddRestaurante" message="tns:IService1_AddRestaurante_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddRestauranteResponse" message="tns:IService1_AddRestaurante_OutputMessage" />
@@ -139,6 +165,10 @@
     <wsdl:operation name="GetVegetais">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetVegetais" message="tns:IService1_GetVegetais_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetVegetaisResponse" message="tns:IService1_GetVegetais_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVegetaisByNome">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetVegetaisByNome" message="tns:IService1_GetVegetaisByNome_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetVegetaisByNomeResponse" message="tns:IService1_GetVegetaisByNome_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="AddVegetal">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddVegetal" message="tns:IService1_AddVegetal_InputMessage" />
@@ -205,6 +235,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetExerciciosByNome">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetExerciciosByNome" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="AddExercicio">
       <soap:operation soapAction="http://tempuri.org/IService1/AddExercicio" style="document" />
       <wsdl:input>
@@ -232,6 +271,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetRestaurantesByNome">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetRestaurantesByNome" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="AddRestaurante">
       <soap:operation soapAction="http://tempuri.org/IService1/AddRestaurante" style="document" />
       <wsdl:input>
@@ -252,6 +300,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetVegetais">
       <soap:operation soapAction="http://tempuri.org/IService1/GetVegetais" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVegetaisByNome">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetVegetaisByNome" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

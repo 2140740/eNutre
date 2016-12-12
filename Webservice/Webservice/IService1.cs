@@ -39,6 +39,11 @@ namespace Webservice
         [WebInvoke(Method = "GET", UriTemplate = "/exercicio?token={token}")]
         List<Exercicios> GetExercicio(string token);
 
+        //GET VEGETAIS BY EXERCICIOS
+        [OperationContract(Name = "GetExerciciosByNome")]
+        [WebInvoke(Method = "GET", UriTemplate = "/exercicio/{nome}?token={token}")]
+        Exercicios GetExerciciosByName(string nome, string token);
+
         // admin only
         // ADD EXERCICIOS
         [OperationContract]
@@ -56,7 +61,12 @@ namespace Webservice
         [OperationContract]
         [WebInvoke(Method = "GET", UriTemplate = "/restaurante?token={token}")]
         List<Restaurantes> GetRestaurantes(string token);
-
+        
+        //GET RESTAURANTES BY NAME
+        [OperationContract(Name = "GetRestaurantesByNome")]
+        [WebInvoke(Method = "GET", UriTemplate = "/restaurante/{nome}?token={token}")]
+        Restaurantes GetRestaurantesByName(string nome, string token);
+        
         // admin only
         // ADD RESTAURANTES
         [OperationContract]
@@ -75,6 +85,11 @@ namespace Webservice
         [WebInvoke(Method = "GET", UriTemplate = "/vegetal?token={token}")]
         List<Vegetais> GetVegetais(string token);
 
+        //GET VEGETAIS BY NAME
+        [OperationContract(Name = "GetVegetaisByNome")]
+        [WebInvoke(Method = "GET", UriTemplate = "/vegetal/{nome}?token={token}")]
+        Vegetais GetVegetaisByName(string nome, string token);
+
         // admin only
         // ADD VEGETAIS
         [OperationContract]
@@ -86,6 +101,8 @@ namespace Webservice
         [OperationContract(Name = "DeleteVegetaisByTitle")]
         [WebInvoke(Method = "DELETE", UriTemplate = "/vegetal/{vegetal}?token={token}")]
         void DeleteVegetal(string vegetal, string token); // admin only
+
+        
     }
 
     [DataContract]

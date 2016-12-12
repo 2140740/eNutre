@@ -5,7 +5,7 @@
 
   <xs:complexType name="restauranteType">
     <xs:sequence>
-      <xs:element name="restaurante" type="xs:string" />
+      <xs:element name="nome" type="xs:string" />
       <xs:element name="item" type="xs:string" />
       <xs:element name="quantidade" type="xs:string" />
       <xs:element name="calorias" type="xs:string" />

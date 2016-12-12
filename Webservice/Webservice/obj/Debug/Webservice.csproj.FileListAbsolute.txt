@@ -35,3 +35,4 @@ D:\David_GIT\InterS\Webservice\Webservice\bin\Microsoft.AI.WindowsServer.xml
 D:\David_GIT\InterS\Webservice\Webservice\bin\Microsoft.ApplicationInsights.xml
 D:\David_GIT\InterS\Webservice\Webservice\obj\Debug\Webservice.dll
 D:\David_GIT\InterS\Webservice\Webservice\obj\Debug\Webservice.pdb
+D:\David_GIT\InterS\Webservice\Webservice\obj\Debug\Webservice.csprojResolveAssemblyReference.cache
