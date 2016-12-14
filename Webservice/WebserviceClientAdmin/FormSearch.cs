@@ -49,40 +49,65 @@ namespace WebserviceClientAdmin
             {
                 MessageBox.Show("Tem de inserir o nome do produto na caixa de texto e seleccionar o recurso que procura.", "Erro", MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
-            else if(comboBoxresource.SelectedItem=="Vegetais")
+            else if (comboBoxresource.SelectedItem == "Vegetais")
             {
-                textBoxSearch.Text = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(textBoxSearch.Text);
+                try
+                {
 
-                Vegetais vegetal = client.GetVegetaisByNome(textBoxSearch.Text, token);
+                    textBoxSearch.Text = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(textBoxSearch.Text);
 
-                textBoxOutput.Text = "Nome: " + vegetal.Nome + Environment.NewLine 
-                    + "Calorias: " +vegetal.Calorias + Environment.NewLine 
-                    + "Quantidade: " + vegetal.Quantidade;
+                    Vegetais vegetal = client.GetVegetaisByNome(textBoxSearch.Text, token);
 
+                    textBoxOutput.Text = "Nome: " + vegetal.Nome + Environment.NewLine
+                                         + "Calorias: " + vegetal.Calorias + Environment.NewLine
+                                         + "Quantidade: " + vegetal.Quantidade;
+
+                }
+                catch (Exception)
+                {
+
+                    MessageBox.Show("Não existe esse produto", "Produto Inexistente",MessageBoxButtons.OKCancel,MessageBoxIcon.Information);
+                }
             }
             else if (comboBoxresource.SelectedItem == "Restaurantes")
             {
-                
-                Restaurantes restaurante = client.GetRestaurantesByNome(textBoxSearch.Text, token);
+                try
+                {
+
+                    Restaurantes restaurante = client.GetRestaurantesByNome(textBoxSearch.Text, token);
 
                 textBoxOutput.Text = "Nome: " + restaurante.Restaurante + Environment.NewLine
-                    + "Item: " + restaurante.Item + Environment.NewLine
-                    + "Quantidade: " + restaurante.Quantidade + Environment.NewLine
-                    + "Calorias: " + restaurante.Calorias;
-                    
+                                     + "Item: " + restaurante.Item + Environment.NewLine
+                                     + "Quantidade: " + restaurante.Quantidade + Environment.NewLine
+                                     + "Calorias: " + restaurante.Calorias;
+
+                }
+                catch (Exception)
+            {
+
+                MessageBox.Show("Não existe esse Restaurante", "Restaurante Inexistente", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            }
             }
 
-             else if (comboBoxresource.SelectedItem == "Exercícios")
+            else if (comboBoxresource.SelectedItem == "Exercícios")
             {
-                textBoxSearch.Text = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(textBoxSearch.Text);
+                try
+                {
+                    textBoxSearch.Text = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(textBoxSearch.Text);
 
                 Exercicios exercicio = client.GetExerciciosByNome(textBoxSearch.Text, token);
 
                 textBoxOutput.Text = "Nome: " + exercicio.Nome + Environment.NewLine
-                    + "Calorias: " + exercicio.Calorias + Environment.NewLine
-                    + "Met: " + exercicio.Met;
+                                     + "Calorias: " + exercicio.Calorias + Environment.NewLine
+                                     + "Met: " + exercicio.Met;
+            }
+                catch (Exception)
+            {
+
+                MessageBox.Show("Não existe esse exercício", "Exercício Inexistente", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             }
         }
+    }
 
     }
 }

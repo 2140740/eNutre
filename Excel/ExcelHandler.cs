@@ -58,7 +58,13 @@ namespace ExcelCode
                         }
                         if (cCnt == 4)
                         {
-                            Calorias.Add(str);
+                            if (str.Contains("kcal"))
+                            {
+                                string[] word = str.Split(' ');
+
+                                Calorias.Add(word[0]);
+                            }
+                            
                         }
                     }
 

@@ -700,4 +700,9 @@
     <nome>ola</nome>
     <quantidade>2</quantidade>
   </vegetal>
+  <vegetal>
+    <calorias>123</calorias>
+    <nome>123</nome>
+    <quantidade>123</quantidade>
+  </vegetal>
 </vegetais>

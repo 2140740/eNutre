@@ -36,3 +36,22 @@ D:\David_GIT\InterS\Webservice\Webservice\bin\Microsoft.ApplicationInsights.xml
 D:\David_GIT\InterS\Webservice\Webservice\obj\Debug\Webservice.dll
 D:\David_GIT\InterS\Webservice\Webservice\obj\Debug\Webservice.pdb
 D:\David_GIT\InterS\Webservice\Webservice\obj\Debug\Webservice.csprojResolveAssemblyReference.cache
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\bin\ApplicationInsights.config
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\bin\Webservice.dll.config
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\bin\Webservice.dll
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\bin\Webservice.pdb
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\bin\Microsoft.AI.Agent.Intercept.dll
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\bin\Microsoft.AI.DependencyCollector.dll
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\bin\Microsoft.AI.Web.dll
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\bin\Microsoft.AI.WindowsServer.dll
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\bin\Microsoft.ApplicationInsights.dll
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\bin\Microsoft.AI.DependencyCollector.xml
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\bin\Microsoft.AI.Web.xml
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\bin\Microsoft.AI.WindowsServer.xml
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\bin\Microsoft.ApplicationInsights.xml
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\obj\Debug\Webservice.csprojResolveAssemblyReference.cache
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\obj\Debug\Webservice.dll
+D:\David_GIT\InterS - Cópia\Webservice\Webservice\obj\Debug\Webservice.pdb

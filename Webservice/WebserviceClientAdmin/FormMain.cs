@@ -237,5 +237,11 @@ namespace WebserviceClientAdmin
             FormSearch formSeacrh = new FormSearch(token);
             formSeacrh.ShowDialog();
         }
+
+        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAdd formAdd = new FormAdd(token);
+            formAdd.ShowDialog();
+        }
     }
 }

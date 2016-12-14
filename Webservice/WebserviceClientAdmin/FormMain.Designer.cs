@@ -42,9 +42,6 @@
             this.signUp = new System.Windows.Forms.ToolStripMenuItem();
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vegetaisToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.restaurantesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.exercíciosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vegetaisToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.restaurantesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -151,31 +148,10 @@
             // 
             // addToolStripMenuItem
             // 
-            this.addToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.vegetaisToolStripMenuItem1,
-            this.restaurantesToolStripMenuItem1,
-            this.exercíciosToolStripMenuItem1});
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
             this.addToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.addToolStripMenuItem.Text = "Add";
-            // 
-            // vegetaisToolStripMenuItem1
-            // 
-            this.vegetaisToolStripMenuItem1.Name = "vegetaisToolStripMenuItem1";
-            this.vegetaisToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.vegetaisToolStripMenuItem1.Text = "Vegetais";
-            // 
-            // restaurantesToolStripMenuItem1
-            // 
-            this.restaurantesToolStripMenuItem1.Name = "restaurantesToolStripMenuItem1";
-            this.restaurantesToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.restaurantesToolStripMenuItem1.Text = "Restaurantes";
-            // 
-            // exercíciosToolStripMenuItem1
-            // 
-            this.exercíciosToolStripMenuItem1.Name = "exercíciosToolStripMenuItem1";
-            this.exercíciosToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.exercíciosToolStripMenuItem1.Text = "Exercícios";
+            this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
@@ -190,19 +166,19 @@
             // vegetaisToolStripMenuItem2
             // 
             this.vegetaisToolStripMenuItem2.Name = "vegetaisToolStripMenuItem2";
-            this.vegetaisToolStripMenuItem2.Size = new System.Drawing.Size(141, 22);
+            this.vegetaisToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.vegetaisToolStripMenuItem2.Text = "Vegetais";
             // 
             // restaurantesToolStripMenuItem2
             // 
             this.restaurantesToolStripMenuItem2.Name = "restaurantesToolStripMenuItem2";
-            this.restaurantesToolStripMenuItem2.Size = new System.Drawing.Size(141, 22);
+            this.restaurantesToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.restaurantesToolStripMenuItem2.Text = "Restaurantes";
             // 
             // exercíciosToolStripMenuItem2
             // 
             this.exercíciosToolStripMenuItem2.Name = "exercíciosToolStripMenuItem2";
-            this.exercíciosToolStripMenuItem2.Size = new System.Drawing.Size(141, 22);
+            this.exercíciosToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.exercíciosToolStripMenuItem2.Text = "Exercícios";
             // 
             // FormMain
@@ -244,9 +220,6 @@
         private System.Windows.Forms.ToolStripMenuItem signUp;
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vegetaisToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem restaurantesToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem exercíciosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vegetaisToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem restaurantesToolStripMenuItem2;
