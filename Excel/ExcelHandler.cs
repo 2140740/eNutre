@@ -34,8 +34,8 @@ namespace ExcelCode
             xlWorkBook = xlApp.Workbooks.Open(path, 0, true, 5, "", "", true,
             Microsoft.Office.Interop.Excel.XlPlatform.xlWindows, "\t", false, false, 0, true, 1, 0);
             xlWorkSheet = (Excel.Worksheet)xlWorkBook.Worksheets.get_Item(1);
-       
-        range = xlWorkSheet.UsedRange; //representa as celulas que têm valores
+
+            range = xlWorkSheet.UsedRange; //representa as celulas que têm valores
 
             for (rCnt = 2; rCnt <= range.Rows.Count; rCnt++)
             {
@@ -64,7 +64,7 @@ namespace ExcelCode
 
                                 Calorias.Add(word[0]);
                             }
-                            
+
                         }
                     }
 
@@ -89,7 +89,7 @@ namespace ExcelCode
 
             for (i = 0; i <= Restaurante.Count - 1; i++)
             {
-                createNode(Restaurante[i], Item[i], Quantidade[i],Calorias[i], writer);
+                createNode(Restaurante[i], Item[i], Quantidade[i], Calorias[i], writer);
             }
             writer.WriteEndElement();
             writer.WriteEndDocument();

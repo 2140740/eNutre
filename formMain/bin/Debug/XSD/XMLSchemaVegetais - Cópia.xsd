@@ -5,26 +5,9 @@
 
   <xs:complexType name="vegetalType">
     <xs:sequence>
-		<xs:element name="calorias" type="xs:unsignedShort">
-	  
-			<xs:simpleType>
-			<xs:restriction base="xs:unsignedShort">
-				<xs:minInclusive value="0"/>
-				<xs:maxInclusive value="500"/>
-			</xs:restriction>
-		</xs:simpleType>
-		</xs:element>
-		  
-    <xs:element name="nome" type="xs:string">
-		<xs:simpleType>
-			<xs:restriction base="xs:string">
-			<xs:pattern value="([A-Z][a-z])*"/>
-			</xs:restriction>
-		</xs:simpleType>
-	</xs:element>
-	
-	
-    <xs:element name="quantidade" type="xs:string"/>
+      <xs:element name="calorias" type="xs:unsignedShort" />
+      <xs:element name="nome" type="xs:string" />
+      <xs:element name="quantidade" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
 

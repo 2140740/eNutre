@@ -1,21 +1,24 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema attributeFormDefault="unqualified"
-           elementFormDefault="qualified"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+﻿<?xml version="1.0"?>
 
-<xs:complexType name="exercicioType">
-<xs:sequence>
-   <xs:element name="nome" type="xs:string" />
-   <xs:element name="calorias" type="xs:unsignedShort" />
-   <xs:element name="met" type="xs:decimal" />
-</xs:sequence>
-</xs:complexType>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.w3schools.com"
+xmlns="http://www.w3schools.com"
+elementFormDefault="qualified">
 
-<xs:complexType name="exerciciosType">
+<xs:element name="note">
+  <xs:complexType>
     <xs:sequence>
-      <xs:element name="exercicio"  type="exercicioType" maxOccurs="unbounded"/>
-</xs:sequence>
-</xs:complexType>
-  
-<xs:element name="exercicios" type="exerciciosType"/>
+      <xs:element name="firstname">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="10"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="lastname" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
 </xs:schema>
