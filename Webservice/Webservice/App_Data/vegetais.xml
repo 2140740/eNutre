@@ -11,6 +11,11 @@
     <quantidade>100 g</quantidade>
   </vegetal>
   <vegetal>
+    <calorias>6</calorias>
+    <nome>Aipo</nome>
+    <quantidade>1 talo, médio</quantidade>
+  </vegetal>
+  <vegetal>
     <calorias>60</calorias>
     <nome>Aipo Cozido</nome>
     <quantidade>1 chávena, cortado em cubos</quantidade>
@@ -641,11 +646,6 @@
     <quantidade>100 g</quantidade>
   </vegetal>
   <vegetal>
-    <calorias>1</calorias>
-    <nome>Rabanetes</nome>
-    <quantidade>1 médio</quantidade>
-  </vegetal>
-  <vegetal>
     <calorias>22</calorias>
     <nome>Tomates</nome>
     <quantidade>1 médio e inteiro</quantidade>
@@ -694,15 +694,5 @@
     <calorias>67</calorias>
     <nome>Mistura de Vegetais Milho, Feijão Verde, Ervilhas, Cenouras sem Sal, Enlatado</nome>
     <quantidade>1 chávena</quantidade>
-  </vegetal>
-  <vegetal>
-    <calorias>123</calorias>
-    <nome>ola</nome>
-    <quantidade>2</quantidade>
-  </vegetal>
-  <vegetal>
-    <calorias>123</calorias>
-    <nome>123</nome>
-    <quantidade>123</quantidade>
   </vegetal>
 </vegetais>

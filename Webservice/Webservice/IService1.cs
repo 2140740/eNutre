@@ -48,7 +48,7 @@ namespace Webservice
         // ADD EXERCICIOS
         [OperationContract]
         [WebInvoke(Method = "POST", UriTemplate = "/exercicio?token={token}")]
-        void AddExercicio(Exercicios exercicios, string token);
+        Exercicios AddExercicio(Exercicios exercicios, string token);
 
         // admin only
         // DELETE EXERCICIOS
@@ -66,12 +66,12 @@ namespace Webservice
         [OperationContract(Name = "GetRestaurantesByNome")]
         [WebInvoke(Method = "GET", UriTemplate = "/restaurante/{nome}?token={token}")]
         Restaurantes GetRestaurantesByName(string nome, string token);
-        
+
         // admin only
         // ADD RESTAURANTES
         [OperationContract]
         [WebInvoke(Method = "POST", UriTemplate = "/restaurante?token={token}")]
-        void AddRestaurante(Restaurantes restaurante, string token);
+        Restaurantes AddRestaurante(Restaurantes restaurante, string token);
 
         // admin only
         // DELETE RESTAURANTES
@@ -94,7 +94,7 @@ namespace Webservice
         // ADD VEGETAIS
         [OperationContract]
         [WebInvoke(Method = "POST", UriTemplate = "/vegetal?token={token}")]
-        void AddVegetal(Vegetais vegetais, string token);
+        Vegetais AddVegetal(Vegetais vegetais, string token);
 
         // admin only
         // DELETE VEGETAIS

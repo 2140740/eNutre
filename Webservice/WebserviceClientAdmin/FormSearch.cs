@@ -29,32 +29,25 @@ namespace WebserviceClientAdmin
         {
 
         }
-
-        public static string FirstCharToUpper(string input)
-        {
-            if (String.IsNullOrEmpty(input))
-                throw new ArgumentException("ARGH!");
-            return input.First().ToString().ToUpper() + input.Substring(1);
-        }
-
-
+        
         private void buttonSearch_Click(object sender, EventArgs e)
         {
             textBoxOutput.Text = "";
 
             //para converter o primeiro caracter para maiuscula
-            
+
 
             if (textBoxSearch.Text == "" || comboBoxresource.SelectedItem == null)
             {
-                MessageBox.Show("Tem de inserir o nome do produto na caixa de texto e seleccionar o recurso que procura.", "Erro", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show(
+                    "Tem de inserir o nome do produto na caixa de texto e seleccionar o recurso que procura.", "Erro",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else if (comboBoxresource.SelectedItem == "Vegetais")
             {
                 try
                 {
-
-                    textBoxSearch.Text = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(textBoxSearch.Text);
+                   
 
                     Vegetais vegetal = client.GetVegetaisByNome(textBoxSearch.Text, token);
 
@@ -63,51 +56,64 @@ namespace WebserviceClientAdmin
                                          + "Quantidade: " + vegetal.Quantidade;
 
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-
-                    MessageBox.Show("Não existe esse produto", "Produto Inexistente",MessageBoxButtons.OKCancel,MessageBoxIcon.Information);
+                    MessageBox.Show(ex.Message, "ERROR");
                 }
+
             }
             else if (comboBoxresource.SelectedItem == "Restaurantes")
             {
+
                 try
                 {
 
                     Restaurantes restaurante = client.GetRestaurantesByNome(textBoxSearch.Text, token);
 
-                textBoxOutput.Text = "Nome: " + restaurante.Restaurante + Environment.NewLine
-                                     + "Item: " + restaurante.Item + Environment.NewLine
-                                     + "Quantidade: " + restaurante.Quantidade + Environment.NewLine
-                                     + "Calorias: " + restaurante.Calorias;
+                    textBoxOutput.Text = "Nome: " + restaurante.Restaurante + Environment.NewLine
+                                         + "Item: " + restaurante.Item + Environment.NewLine
+                                         + "Quantidade: " + restaurante.Quantidade + Environment.NewLine
+                                         + "Calorias: " + restaurante.Calorias;
 
                 }
-                catch (Exception)
-            {
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "ERROR");
+                }
 
-                MessageBox.Show("Não existe esse Restaurante", "Restaurante Inexistente", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-            }
             }
 
             else if (comboBoxresource.SelectedItem == "Exercícios")
             {
+
                 try
                 {
-                    textBoxSearch.Text = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(textBoxSearch.Text);
+                   
 
-                Exercicios exercicio = client.GetExerciciosByNome(textBoxSearch.Text, token);
+                    Exercicios exercicio = client.GetExerciciosByNome(textBoxSearch.Text, token);
 
-                textBoxOutput.Text = "Nome: " + exercicio.Nome + Environment.NewLine
-                                     + "Calorias: " + exercicio.Calorias + Environment.NewLine
-                                     + "Met: " + exercicio.Met;
-            }
-                catch (Exception)
-            {
+                    textBoxOutput.Text = "Nome: " + exercicio.Nome + Environment.NewLine
+                                         + "Calorias: " + exercicio.Calorias + Environment.NewLine
+                                         + "Met: " + exercicio.Met;
 
-                MessageBox.Show("Não existe esse exercício", "Exercício Inexistente", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "ERROR");
+                }
             }
         }
-    }
 
+        private void buttonprocuracalorias_Click(object sender, EventArgs e)
+        {
+            FormCaloriasEspecificas formCaloriasEspecificas = new FormCaloriasEspecificas(token);
+            formCaloriasEspecificas.ShowDialog();
+        }
+
+        private void buttonCalorias_Exercicios_Click(object sender, EventArgs e)
+        {
+            FormCaloriasExercicios formCaloriasExercicios = new FormCaloriasExercicios(token);
+            formCaloriasExercicios.ShowDialog();
+        }
     }
 }

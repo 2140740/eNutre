@@ -35,11 +35,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxresource = new System.Windows.Forms.ComboBox();
+            this.buttonprocuracalorias = new System.Windows.Forms.Button();
+            this.buttonCalorias_Exercicios = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonSearch
             // 
-            this.buttonSearch.Location = new System.Drawing.Point(16, 51);
+            this.buttonSearch.Location = new System.Drawing.Point(16, 85);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(75, 23);
             this.buttonSearch.TabIndex = 0;
@@ -49,7 +51,7 @@
             // 
             // textBoxSearch
             // 
-            this.textBoxSearch.Location = new System.Drawing.Point(16, 25);
+            this.textBoxSearch.Location = new System.Drawing.Point(16, 59);
             this.textBoxSearch.Name = "textBoxSearch";
             this.textBoxSearch.Size = new System.Drawing.Size(193, 20);
             this.textBoxSearch.TabIndex = 1;
@@ -66,7 +68,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 9);
+            this.label1.Location = new System.Drawing.Point(13, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 3;
@@ -84,7 +86,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(340, 9);
+            this.label3.Location = new System.Drawing.Point(340, 43);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 13);
             this.label3.TabIndex = 5;
@@ -97,16 +99,38 @@
             "Vegetais",
             "Restaurantes",
             "Exercícios"});
-            this.comboBoxresource.Location = new System.Drawing.Point(343, 25);
+            this.comboBoxresource.Location = new System.Drawing.Point(343, 59);
             this.comboBoxresource.Name = "comboBoxresource";
             this.comboBoxresource.Size = new System.Drawing.Size(121, 21);
             this.comboBoxresource.TabIndex = 6;
+            // 
+            // buttonprocuracalorias
+            // 
+            this.buttonprocuracalorias.Location = new System.Drawing.Point(12, 12);
+            this.buttonprocuracalorias.Name = "buttonprocuracalorias";
+            this.buttonprocuracalorias.Size = new System.Drawing.Size(123, 23);
+            this.buttonprocuracalorias.TabIndex = 7;
+            this.buttonprocuracalorias.Text = "Calorias Específicas";
+            this.buttonprocuracalorias.UseVisualStyleBackColor = true;
+            this.buttonprocuracalorias.Click += new System.EventHandler(this.buttonprocuracalorias_Click);
+            // 
+            // buttonCalorias_Exercicios
+            // 
+            this.buttonCalorias_Exercicios.Location = new System.Drawing.Point(170, 12);
+            this.buttonCalorias_Exercicios.Name = "buttonCalorias_Exercicios";
+            this.buttonCalorias_Exercicios.Size = new System.Drawing.Size(132, 23);
+            this.buttonCalorias_Exercicios.TabIndex = 8;
+            this.buttonCalorias_Exercicios.Text = "Calorias Exercícios";
+            this.buttonCalorias_Exercicios.UseVisualStyleBackColor = true;
+            this.buttonCalorias_Exercicios.Click += new System.EventHandler(this.buttonCalorias_Exercicios_Click);
             // 
             // FormSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(476, 377);
+            this.Controls.Add(this.buttonCalorias_Exercicios);
+            this.Controls.Add(this.buttonprocuracalorias);
             this.Controls.Add(this.comboBoxresource);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -132,5 +156,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBoxresource;
+        private System.Windows.Forms.Button buttonprocuracalorias;
+        private System.Windows.Forms.Button buttonCalorias_Exercicios;
     }
 }

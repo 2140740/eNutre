@@ -108,7 +108,9 @@
   </xs:element>
   <xs:element name="AddExercicioResponse">
     <xs:complexType>
-      <xs:sequence />
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Webservice" minOccurs="0" name="AddExercicioResult" nillable="true" type="q5:Exercicios" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="DeleteExercicioisByTitle">
@@ -134,7 +136,7 @@
   <xs:element name="GetRestaurantesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Webservice" minOccurs="0" name="GetRestaurantesResult" nillable="true" type="q5:ArrayOfRestaurantes" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Webservice" minOccurs="0" name="GetRestaurantesResult" nillable="true" type="q6:ArrayOfRestaurantes" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -149,21 +151,23 @@
   <xs:element name="GetRestaurantesByNomeResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Webservice" minOccurs="0" name="GetRestaurantesByNomeResult" nillable="true" type="q6:Restaurantes" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Webservice" minOccurs="0" name="GetRestaurantesByNomeResult" nillable="true" type="q7:Restaurantes" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="AddRestaurante">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Webservice" minOccurs="0" name="restaurante" nillable="true" type="q7:Restaurantes" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Webservice" minOccurs="0" name="restaurante" nillable="true" type="q8:Restaurantes" />
         <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="AddRestauranteResponse">
     <xs:complexType>
-      <xs:sequence />
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Webservice" minOccurs="0" name="AddRestauranteResult" nillable="true" type="q9:Restaurantes" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="DeleteRestauranteByTitle">
@@ -189,7 +193,7 @@
   <xs:element name="GetVegetaisResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Webservice" minOccurs="0" name="GetVegetaisResult" nillable="true" type="q8:ArrayOfVegetais" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Webservice" minOccurs="0" name="GetVegetaisResult" nillable="true" type="q10:ArrayOfVegetais" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -204,21 +208,23 @@
   <xs:element name="GetVegetaisByNomeResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Webservice" minOccurs="0" name="GetVegetaisByNomeResult" nillable="true" type="q9:Vegetais" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Webservice" minOccurs="0" name="GetVegetaisByNomeResult" nillable="true" type="q11:Vegetais" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="AddVegetal">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Webservice" minOccurs="0" name="vegetais" nillable="true" type="q10:Vegetais" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Webservice" minOccurs="0" name="vegetais" nillable="true" type="q12:Vegetais" />
         <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="AddVegetalResponse">
     <xs:complexType>
-      <xs:sequence />
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Webservice" minOccurs="0" name="AddVegetalResult" nillable="true" type="q13:Vegetais" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="DeleteVegetaisByTitle">

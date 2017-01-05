@@ -384,10 +384,10 @@ namespace WebserviceClientAdmin.ServiceReferenceWebservice {
         System.Threading.Tasks.Task<WebserviceClientAdmin.ServiceReferenceWebservice.Exercicios> GetExerciciosByNomeAsync(string nome, string token);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddExercicio", ReplyAction="http://tempuri.org/IService1/AddExercicioResponse")]
-        void AddExercicio(WebserviceClientAdmin.ServiceReferenceWebservice.Exercicios exercicios, string token);
+        WebserviceClientAdmin.ServiceReferenceWebservice.Exercicios AddExercicio(WebserviceClientAdmin.ServiceReferenceWebservice.Exercicios exercicios, string token);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddExercicio", ReplyAction="http://tempuri.org/IService1/AddExercicioResponse")]
-        System.Threading.Tasks.Task AddExercicioAsync(WebserviceClientAdmin.ServiceReferenceWebservice.Exercicios exercicios, string token);
+        System.Threading.Tasks.Task<WebserviceClientAdmin.ServiceReferenceWebservice.Exercicios> AddExercicioAsync(WebserviceClientAdmin.ServiceReferenceWebservice.Exercicios exercicios, string token);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DeleteExercicioisByTitle", ReplyAction="http://tempuri.org/IService1/DeleteExercicioisByTitleResponse")]
         void DeleteExercicioisByTitle(string exercicio, string token);
@@ -408,10 +408,10 @@ namespace WebserviceClientAdmin.ServiceReferenceWebservice {
         System.Threading.Tasks.Task<WebserviceClientAdmin.ServiceReferenceWebservice.Restaurantes> GetRestaurantesByNomeAsync(string nome, string token);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddRestaurante", ReplyAction="http://tempuri.org/IService1/AddRestauranteResponse")]
-        void AddRestaurante(WebserviceClientAdmin.ServiceReferenceWebservice.Restaurantes restaurante, string token);
+        WebserviceClientAdmin.ServiceReferenceWebservice.Restaurantes AddRestaurante(WebserviceClientAdmin.ServiceReferenceWebservice.Restaurantes restaurante, string token);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddRestaurante", ReplyAction="http://tempuri.org/IService1/AddRestauranteResponse")]
-        System.Threading.Tasks.Task AddRestauranteAsync(WebserviceClientAdmin.ServiceReferenceWebservice.Restaurantes restaurante, string token);
+        System.Threading.Tasks.Task<WebserviceClientAdmin.ServiceReferenceWebservice.Restaurantes> AddRestauranteAsync(WebserviceClientAdmin.ServiceReferenceWebservice.Restaurantes restaurante, string token);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DeleteRestauranteByTitle", ReplyAction="http://tempuri.org/IService1/DeleteRestauranteByTitleResponse")]
         void DeleteRestauranteByTitle(string restaurante, string token);
@@ -432,10 +432,10 @@ namespace WebserviceClientAdmin.ServiceReferenceWebservice {
         System.Threading.Tasks.Task<WebserviceClientAdmin.ServiceReferenceWebservice.Vegetais> GetVegetaisByNomeAsync(string nome, string token);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddVegetal", ReplyAction="http://tempuri.org/IService1/AddVegetalResponse")]
-        void AddVegetal(WebserviceClientAdmin.ServiceReferenceWebservice.Vegetais vegetais, string token);
+        WebserviceClientAdmin.ServiceReferenceWebservice.Vegetais AddVegetal(WebserviceClientAdmin.ServiceReferenceWebservice.Vegetais vegetais, string token);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddVegetal", ReplyAction="http://tempuri.org/IService1/AddVegetalResponse")]
-        System.Threading.Tasks.Task AddVegetalAsync(WebserviceClientAdmin.ServiceReferenceWebservice.Vegetais vegetais, string token);
+        System.Threading.Tasks.Task<WebserviceClientAdmin.ServiceReferenceWebservice.Vegetais> AddVegetalAsync(WebserviceClientAdmin.ServiceReferenceWebservice.Vegetais vegetais, string token);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DeleteVegetaisByTitle", ReplyAction="http://tempuri.org/IService1/DeleteVegetaisByTitleResponse")]
         void DeleteVegetaisByTitle(string vegetal, string token);
@@ -527,11 +527,11 @@ namespace WebserviceClientAdmin.ServiceReferenceWebservice {
             return base.Channel.GetExerciciosByNomeAsync(nome, token);
         }
         
-        public void AddExercicio(WebserviceClientAdmin.ServiceReferenceWebservice.Exercicios exercicios, string token) {
-            base.Channel.AddExercicio(exercicios, token);
+        public WebserviceClientAdmin.ServiceReferenceWebservice.Exercicios AddExercicio(WebserviceClientAdmin.ServiceReferenceWebservice.Exercicios exercicios, string token) {
+            return base.Channel.AddExercicio(exercicios, token);
         }
         
-        public System.Threading.Tasks.Task AddExercicioAsync(WebserviceClientAdmin.ServiceReferenceWebservice.Exercicios exercicios, string token) {
+        public System.Threading.Tasks.Task<WebserviceClientAdmin.ServiceReferenceWebservice.Exercicios> AddExercicioAsync(WebserviceClientAdmin.ServiceReferenceWebservice.Exercicios exercicios, string token) {
             return base.Channel.AddExercicioAsync(exercicios, token);
         }
         
@@ -559,11 +559,11 @@ namespace WebserviceClientAdmin.ServiceReferenceWebservice {
             return base.Channel.GetRestaurantesByNomeAsync(nome, token);
         }
         
-        public void AddRestaurante(WebserviceClientAdmin.ServiceReferenceWebservice.Restaurantes restaurante, string token) {
-            base.Channel.AddRestaurante(restaurante, token);
+        public WebserviceClientAdmin.ServiceReferenceWebservice.Restaurantes AddRestaurante(WebserviceClientAdmin.ServiceReferenceWebservice.Restaurantes restaurante, string token) {
+            return base.Channel.AddRestaurante(restaurante, token);
         }
         
-        public System.Threading.Tasks.Task AddRestauranteAsync(WebserviceClientAdmin.ServiceReferenceWebservice.Restaurantes restaurante, string token) {
+        public System.Threading.Tasks.Task<WebserviceClientAdmin.ServiceReferenceWebservice.Restaurantes> AddRestauranteAsync(WebserviceClientAdmin.ServiceReferenceWebservice.Restaurantes restaurante, string token) {
             return base.Channel.AddRestauranteAsync(restaurante, token);
         }
         
@@ -591,11 +591,11 @@ namespace WebserviceClientAdmin.ServiceReferenceWebservice {
             return base.Channel.GetVegetaisByNomeAsync(nome, token);
         }
         
-        public void AddVegetal(WebserviceClientAdmin.ServiceReferenceWebservice.Vegetais vegetais, string token) {
-            base.Channel.AddVegetal(vegetais, token);
+        public WebserviceClientAdmin.ServiceReferenceWebservice.Vegetais AddVegetal(WebserviceClientAdmin.ServiceReferenceWebservice.Vegetais vegetais, string token) {
+            return base.Channel.AddVegetal(vegetais, token);
         }
         
-        public System.Threading.Tasks.Task AddVegetalAsync(WebserviceClientAdmin.ServiceReferenceWebservice.Vegetais vegetais, string token) {
+        public System.Threading.Tasks.Task<WebserviceClientAdmin.ServiceReferenceWebservice.Vegetais> AddVegetalAsync(WebserviceClientAdmin.ServiceReferenceWebservice.Vegetais vegetais, string token) {
             return base.Channel.AddVegetalAsync(vegetais, token);
         }
         

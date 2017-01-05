@@ -210,7 +210,7 @@ namespace Webservice
             return exercicio;
         }
 
-        public void AddExercicio(Exercicios exercicios, string token)
+        public Exercicios AddExercicio(Exercicios exercicios, string token)
         {
             checkAuthentication(token, true);
             XmlDocument doc = new XmlDocument();
@@ -232,6 +232,8 @@ namespace Webservice
 
             exercicioNode.AppendChild(exercicio_Node);
             doc.Save(FILEPATHExerc);
+
+            return exercicios;
         }
 
         public void DeleteExercicio(string exercicio, string token)
@@ -294,7 +296,7 @@ namespace Webservice
             return restaurante;
         }
 
-        public void AddRestaurante(Restaurantes restaurante, string token)
+        public Restaurantes AddRestaurante(Restaurantes restaurante, string token)
         {
             checkAuthentication(token, true);
             XmlDocument doc = new XmlDocument();
@@ -320,15 +322,17 @@ namespace Webservice
 
             restauranteNode.AppendChild(restaurante_Node);
             doc.Save(FILEPATHrest);
+
+            return restaurante;
         }
 
-        public void DeleteRestaurante(string restaurante, string token)
+        public void DeleteRestaurante(string item, string token)
         {
             checkAuthentication(token, true);
             XmlDocument doc = new XmlDocument();
             doc.Load(FILEPATHrest);
             XmlNode restauranteNode = doc.SelectSingleNode("/restaurantes");
-            XmlNode restaurantesNode = doc.SelectSingleNode("/restaurantes/restaurante[restaurante='" + restaurante + "']");
+            XmlNode restaurantesNode = doc.SelectSingleNode("/restaurantes/restaurante[item='" + item + "']");
             if (restaurantesNode != null)
             {
                 restauranteNode.RemoveChild(restaurantesNode);
@@ -336,19 +340,19 @@ namespace Webservice
             }
         }
         
-        public Restaurantes GetRestaurantesByName(string nome, string token)
+        public Restaurantes GetRestaurantesByName(string item, string token)
         {
             checkAuthentication(token, false);
             XmlDocument doc = new XmlDocument();
             doc.Load(FILEPATHrest);
-            XmlNode nomeNode = doc.SelectSingleNode("/restaurantes/restaurante[nome='" + nome + "']/nome");
+            XmlNode nomeNode = doc.SelectSingleNode("/restaurantes/restaurante[item='" + item + "']/nome");
             if (nomeNode == null)
             {
                 return null;
             }
-            XmlNode itemNode = doc.SelectSingleNode("/restaurantes/restaurante[nome='" + nome + "']/item");
-            XmlNode quantidadeNode = doc.SelectSingleNode("/restaurantes/restaurante[nome='" + nome + "']/quantidade");
-            XmlNode caloriasNode = doc.SelectSingleNode("/restaurantes/restaurante[nome='" + nome + "']/calorias");
+            XmlNode itemNode = doc.SelectSingleNode("/restaurantes/restaurante[item='" + item + "']/item");
+            XmlNode quantidadeNode = doc.SelectSingleNode("/restaurantes/restaurante[item='" + item + "']/quantidade");
+            XmlNode caloriasNode = doc.SelectSingleNode("/restaurantes/restaurante[item='" + item + "']/calorias");
 
             Restaurantes restaurante = new Restaurantes(
             nomeNode.InnerText,
@@ -383,7 +387,7 @@ namespace Webservice
             return vegetal;
         }
 
-        public void AddVegetal(Vegetais vegetal, string token)
+        public Vegetais AddVegetal(Vegetais vegetais, string token)
         {
             checkAuthentication(token, true);
             XmlDocument doc = new XmlDocument();
@@ -392,19 +396,21 @@ namespace Webservice
             XmlElement vegetal_Node = doc.CreateElement("vegetal");
 
             XmlElement vegetalCaloriasNode = doc.CreateElement("calorias");
-            vegetalCaloriasNode.InnerText = vegetal.Calorias;
+            vegetalCaloriasNode.InnerText = vegetais.Calorias;
             vegetal_Node.AppendChild(vegetalCaloriasNode);
 
             XmlElement vegetalNomeNode = doc.CreateElement("nome");
-            vegetalNomeNode.InnerText = vegetal.Nome;
+            vegetalNomeNode.InnerText = vegetais.Nome;
             vegetal_Node.AppendChild(vegetalNomeNode);
 
             XmlElement vegetalquantidadeNode = doc.CreateElement("quantidade");
-            vegetalquantidadeNode.InnerText = vegetal.Quantidade;
+            vegetalquantidadeNode.InnerText = vegetais.Quantidade;
             vegetal_Node.AppendChild(vegetalquantidadeNode);
 
             vegetalNode.AppendChild(vegetal_Node);
             doc.Save(FILEPATHveg);
+
+            return vegetais;
         }
 
         public void DeleteVegetal(string vegetal, string token)
@@ -419,6 +425,7 @@ namespace Webservice
                 restauranteNode.RemoveChild(restaurantesNode);
                 doc.Save(FILEPATHveg);
             }
+
         }
 
         public Vegetais GetVegetaisByName(string nome, string token)

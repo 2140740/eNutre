@@ -28,78 +28,13 @@ namespace WebserviceClientAdmin
             comboBoxOp.Items.Add("Get Exercicios");
             addToolStripMenuItem.Visible = false;
             deleteToolStripMenuItem.Visible = false;
-            searchToolStripMenuItem.Visible = false;
+            searchToolStripMenuItem.Visible = true;
 
             if (!String.IsNullOrEmpty(token) && client.IsLoggedIn(token))
             {
                 MessageBox.Show("A user already logged in: " + user + ". Please log out first.");
             }
         }
-
-/*
-                                private void buttonLogin_Click(object sender, EventArgs e)
-                                {
-                                    if (!String.IsNullOrEmpty(token) && client.IsLoggedIn(token))
-                                    {
-                                        MessageBox.Show("A user already logged in: " + user + ". Please log out first.");
-                                    }
-                                    else
-                                    {
-                                        FormLogin formAuth = new FormLogin(client);
-                        
-                                        DialogResult dialogResult = formAuth.ShowDialog();
-                                        if (dialogResult == DialogResult.OK)
-                                        {
-                                            token = formAuth.Token;
-                                            user = formAuth.User;
-                                            MessageBox.Show("LogIn successful: " + user);
-                                        }
-                                    }
-                                }
-                        
-                                private void buttonLogOut_Click(object sender, EventArgs e)
-                                {
-                                    try
-                                    {
-                                        if (String.IsNullOrEmpty(token) || !client.IsLoggedIn(token))
-                                        {
-                                            MessageBox.Show("User is not logged in");
-                                        }
-                                        else
-                                        {
-                                            client.LogOut(token);
-                                            token = null;
-                                            user = null;
-                                            MessageBox.Show("LogOut successful.");
-                                        }
-                                    }
-                                    catch (Exception ex)
-                                    {
-                                        MessageBox.Show(ex.Message, "ERROR");
-                                    }
-                                }
-                        
-                                private void buttonSignUp_Click_Click(object sender, EventArgs e)
-                                {
-                                    if (String.IsNullOrEmpty(token) || !client.IsLoggedIn(token))
-                                    {
-                                        MessageBox.Show("User is not logged in.");
-                                    }
-                                    else if (!client.IsAdmin(token))
-                                    {
-                                        MessageBox.Show("User does not possess administration privileges.");
-                                    }
-                                    else
-                                    {
-                                        FormSignUp formSignUp = new FormSignUp(client, token);
-                                        DialogResult dialogResult = formSignUp.ShowDialog();
-                                        if (dialogResult == DialogResult.OK)
-                                        {
-                                            MessageBox.Show("SignUp successful.");
-                                        }
-                                    }
-                        
-                                }*/
 
         private void buttonGo_Click_Click(object sender, EventArgs e)
         {
@@ -179,7 +114,7 @@ namespace WebserviceClientAdmin
                     {
                         addToolStripMenuItem.Visible = true;
                         deleteToolStripMenuItem.Visible = true;
-                        searchToolStripMenuItem.Visible = true;
+
                     }
                     else
                     {
@@ -191,6 +126,9 @@ namespace WebserviceClientAdmin
 
         private void logOut_Click(object sender, EventArgs e)
         {
+            addToolStripMenuItem.Visible = false;
+            deleteToolStripMenuItem.Visible = false;
+
             try
             {
                 if (String.IsNullOrEmpty(token) || !client.IsLoggedIn(token))
@@ -243,5 +181,12 @@ namespace WebserviceClientAdmin
             FormAdd formAdd = new FormAdd(token);
             formAdd.ShowDialog();
         }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormDelete formDelete = new FormDelete(token);
+            formDelete.ShowDialog();
+        }
+
     }
 }

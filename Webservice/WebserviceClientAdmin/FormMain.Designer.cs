@@ -43,9 +43,6 @@
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vegetaisToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.restaurantesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.exercíciosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.exerciciosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -155,31 +152,10 @@
             // 
             // deleteToolStripMenuItem
             // 
-            this.deleteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.vegetaisToolStripMenuItem2,
-            this.restaurantesToolStripMenuItem2,
-            this.exercíciosToolStripMenuItem2});
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.deleteToolStripMenuItem.Text = "Delete";
-            // 
-            // vegetaisToolStripMenuItem2
-            // 
-            this.vegetaisToolStripMenuItem2.Name = "vegetaisToolStripMenuItem2";
-            this.vegetaisToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.vegetaisToolStripMenuItem2.Text = "Vegetais";
-            // 
-            // restaurantesToolStripMenuItem2
-            // 
-            this.restaurantesToolStripMenuItem2.Name = "restaurantesToolStripMenuItem2";
-            this.restaurantesToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.restaurantesToolStripMenuItem2.Text = "Restaurantes";
-            // 
-            // exercíciosToolStripMenuItem2
-            // 
-            this.exercíciosToolStripMenuItem2.Name = "exercíciosToolStripMenuItem2";
-            this.exercíciosToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.exercíciosToolStripMenuItem2.Text = "Exercícios";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // FormMain
             // 
@@ -221,8 +197,5 @@
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vegetaisToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem restaurantesToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem exercíciosToolStripMenuItem2;
     }
 }

@@ -54,6 +54,24 @@
     <Compile Include="FormAdd.Designer.cs">
       <DependentUpon>FormAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCaloriasEspecificas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCaloriasEspecificas.Designer.cs">
+      <DependentUpon>FormCaloriasEspecificas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCaloriasExercicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCaloriasExercicios.Designer.cs">
+      <DependentUpon>FormCaloriasExercicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDelete.Designer.cs">
+      <DependentUpon>FormDelete.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +105,15 @@
     </Compile>
     <EmbeddedResource Include="FormAdd.resx">
       <DependentUpon>FormAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCaloriasEspecificas.resx">
+      <DependentUpon>FormCaloriasEspecificas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCaloriasExercicios.resx">
+      <DependentUpon>FormCaloriasExercicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDelete.resx">
+      <DependentUpon>FormDelete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
